@@ -10,10 +10,10 @@ function SubNavigation() {
       </button>
       <nav className="sub-nav">
         <p>Here's additional help for using this app!</p>
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
+        <ul className="sub-nav-menu">
+          <li>lorem</li>
+          <li>lorem</li>
+          <li>lorem</li>
         </ul>
       </nav>
     </div>
