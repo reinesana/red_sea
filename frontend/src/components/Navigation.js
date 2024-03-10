@@ -9,7 +9,7 @@ function Navigation() {
       <nav className="thumb-nav">
         <ul className="nav-menu">
           <li className="map-li">
-            <NavLink to="/">
+            <NavLink to="/map">
               <FaMapPin className="map-icon" />
               <br></br>
               Map
