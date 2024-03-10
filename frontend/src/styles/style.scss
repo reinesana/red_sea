@@ -1,2 +1,8 @@
 @import "./pages/pages";
 @import "./components/components";
+@import "variables";
+
+body{
+    color: black;
+    font-size: 1.5rem;
+}
