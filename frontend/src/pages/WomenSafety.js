@@ -1,8 +1,9 @@
+
 function WomenSafety() {
 
     return (
-        <div>
-            <h1>Women safety</h1>
+        <div className="women-safety">
+            <h1>Women's Safety Information</h1>
             <h2>1. General Safety Tips:</h2> 
             <p>Trust your instincts: If something feels off or unsafe, don't hesitate to leave the area or seek help.</p>
             <p>Be aware of your surroundings: Stay vigilant and mindful of your environment, especially when traveling alone or with children.</p>
@@ -32,7 +33,6 @@ function WomenSafety() {
             <p>Don't hesitate to ask for help: If you feel unsafe or require assistance, reach out to shelter staff, local authorities, or other individuals nearby.</p>
             <p>Utilize community resources: Take advantage of community resources available at shelters, such as counseling services or support groups for women and families.</p>
             <p>Remember, your safety and well-being are paramount. Take proactive measures to ensure your security and don't hesitate to seek assistance when needed.</p>
-
         </div>
     )
 }

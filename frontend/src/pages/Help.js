@@ -2,8 +2,11 @@ function Help (){
 
 
     return(
-        <div>
+        <div className="help">
             <h1>Help & FAQ</h1>
+            <h2>Change Language Here:</h2>
+            <p></p>
+
             <h2>1. What is the purpose of this app?</h2>
             <p>The app is designed to assist users, particularly refugees and women with children, in locating nearby shelters and avoiding potentially dangerous areas. It aims to provide a sense of safety and security by offering information on safe havens during times of distress or displacement.</p>
 
@@ -18,6 +21,9 @@ function Help (){
 
             <h2>5. How can I contribute to the app's community-driven features?</h2>
             <p>Users can contribute to the app's community-driven features by submitting feedback, reviews, and reports on shelters and danger zones. This information helps improve the app's functionality and provides valuable insights for other users.</p>
+
+            <h2>6. What do the blue dots on the map mean?</h2>
+            <p></p>
         </div>
     )
 }
