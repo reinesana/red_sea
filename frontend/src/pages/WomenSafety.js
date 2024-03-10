@@ -1,6 +1,7 @@
 function WomenSafety() {
   return (
     <div className="women-safety">
+      <div className="women-safety-card">
       <h1>Women's Safety Information</h1>
       <h2>1. General Safety Tips:</h2>
       <p>
@@ -94,6 +95,7 @@ function WomenSafety() {
         measures to ensure your security and don't hesitate to seek assistance
         when needed.
       </p>
+      </div>
     </div>
   );
 }
