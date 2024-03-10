@@ -1,15 +1,17 @@
+
+
 function Navigation() {
   return (
-    <header>
-      <h1>My App</h1>
-      <nav>
-        <ul>
+    <div className="navigation">
+      <nav className="thumb-nav">
+        <ul className="nav-menu">
           <li>Home</li>
           <li>Map</li>
           <li>Help</li>
+          <li>Women's<br></br> Safety</li>
         </ul>
       </nav>
-    </header>
+    </div>
   );
 }
 export default Navigation;
