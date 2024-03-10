@@ -60,7 +60,7 @@ function Help() {
         <p>
           Contact Form:{" "}
           <a href="https://www.msf.org/contact-us">
-            https://www.msf.org/contact-us
+            Contact Form
           </a>
         </p>
         <p>Phone: +962 6 462 4775</p>
@@ -89,7 +89,7 @@ function Help() {
         <p>
           Contact Form:{" "}
           <a href="https://www.actionagainsthunger.org/contact-us">
-            https://www.actionagainsthunger.org/contact-us
+            Contact Form
           </a>
         </p>
         <p>Phone: +33 1 43 35 88 88</p>
@@ -118,7 +118,7 @@ function Help() {
         <p>
           Contact Form:{" "}
           <a href="https://internationalmedicalcorps.org/contact/">
-            https://internationalmedicalcorps.org/contact/
+            Contact Form
           </a>
         </p>
         <p>Phone: +1 424 252 6000</p>
