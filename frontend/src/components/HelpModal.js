@@ -1,15 +1,14 @@
 import { IoClose } from 'react-icons/io5';
 
-function LanguagesModal ({ onClose }) {
+function HelpModal ({ onClose }) {
 
     return (
-        <div className="languages-modal">
+        <div>
             <button className='close-button' onClick={onClose}><IoClose />
 
-            
             </button>
         </div>
     )
 }
 
-export default LanguagesModal;
+export default HelpModal;
