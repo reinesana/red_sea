@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
-import ReactMapGL from "react-map-gl"; // Import ReactMapGL component
-import "mapbox-gl/dist/mapbox-gl.css"; // Import Mapbox GL CSS file
+import "mapbox-gl/dist/mapbox-gl.css";
 
 const Earth = () => {
   useEffect(() => {
@@ -13,25 +12,26 @@ const Earth = () => {
       style: "mapbox://styles/gprem09/cltl7l6vq014901oi92wuer6w",
       center: [-74.5, 40],
       zoom: 0.01,
+      pitch: 50, // Set the pitch to make the map appear 3D
+      bearing: 0, // Initial bearing (rotation)
     });
+
+    // Function to rotate the map
+    const rotateMap = () => {
+      const bearing = map.getBearing();
+      map.rotateTo(bearing + 1, { duration: 100, easing: () => 0.5 });
+      requestAnimationFrame(rotateMap);
+    };
+
+    // Start the rotation animation
+    rotateMap();
 
     return () => {
       map.remove();
     };
   }, []);
 
-  return (
-    <div
-      id="map"
-      style={{
-        width: "100%",
-        height: "600px",
-        position: "fixed",
-        top: "0",
-        zIndex: "-10",
-      }}
-    />
-  );
+  return <div id="map" className="earth" />;
 };
 
 export default Earth;
