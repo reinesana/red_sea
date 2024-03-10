@@ -96,8 +96,16 @@
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-image: linear-gradient(to right top, #e01363, #ed374f, #f2553c, #f17228, #eb8d12);
+  padding-top: 7px; 
+  border-top-left-radius: 24px; 
+  border-top-right-radius: 24px; 
+  border-left-width: 20px;
+  border-right-width: 20px;
+  overflow: hidden; 
+  background-color: white;
+  /*linear-gradient(to right top, #e01363, #ed374f, #f2553c, #f17228, #eb8d12);*/
 }
+
 .nav-menu .map-icon {
   height: 1.3rem;
   width: 1.3rem;

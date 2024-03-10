@@ -1,20 +1,24 @@
 // @use "../variables" as *;
 
 .nav-menu{
-    display: flex;
-    justify-content: space-evenly;
-    list-style-type: none;
-    font-size: .85rem;
-    align-items: center;
-    padding: .6rem 0;
-    margin: 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-image: linear-gradient(to right top, #e01363, #ed374f, #f2553c, #f17228, #eb8d12);    .map-icon{
-        height: 1.3rem;
-        width: 1.3rem;
-        margin-bottom: .3rem;
+        display: flex;
+        justify-content: space-evenly;
+        list-style-type: none;
+        font-size: 0.85rem;
+        align-items: center;
+        padding: 0.6rem 0;
+        margin: 0;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        padding-top: 7px; 
+        border-top-left-radius: 40px; 
+        border-top-right-radius: 40px; 
+        border-left-width: 40px;
+        border-right-width: 40px;
+        overflow: hidden; 
+        background-color: rgb(255, 255, 255);
+        box-shadow: 1px 2px 4px 1px rgba(89, 87, 87, 0.2);
     }
     
     .help-center-icon{
@@ -28,7 +32,7 @@
     }
 
     li, a{
-        color: white;
+        color:#f1330d;
         text-decoration: none;
         text-align: center;
     }
@@ -43,4 +47,3 @@
         background-color: white;
         color: white;
     }
-}
