@@ -141,6 +141,7 @@ function Map() {
         type="text"
         placeholder="Search for a place"
         onChange={handleSearchChange}
+        className="search-input"
       />
       <select
         onChange={(e) => setSelectedCamp(camps[parseInt(e.target.value, 10)])}

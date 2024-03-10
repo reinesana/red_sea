@@ -1,0 +1,14 @@
+.search-input {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 10;
+  width: 150px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
