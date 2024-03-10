@@ -1,22 +1,85 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 .help-body {
-  font-size: 1rem;
-  margin: 1rem 1rem 6rem 1rem;
-  border-radius: 2rem;
-  padding: 1rem;
+  font-size: 0.65rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  font-family: "Roboto", sans-serif;
+  background-color: #faece6;
+  margin-bottom: 1rem;
+  font-family: "Nunito", sans-serif;
 }
 .help-body .help-center {
-  background-color: #D0E3FF;
-  padding: 1rem;
-  border-radius: 1.5rem;
-  margin-bottom: 1rem;
-  box-shadow: 3px 3px 3px #7b8fae;
+  width: 20rem;
+  height: auto;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: rgb(0, 0, 0);
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  margin: 25px;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(3.1px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 .help-body h1 {
+  color: rgb(170, 77, 0);
   text-align: center;
+  font-size: 2rem;
+  text-decoration: 2px solid;
+}
+.help-body h2 {
+  max-width: 80%;
+  color: black;
 }
 .help-body h3 {
-  text-align: center;
+  max-width: 80%;
+  color: black;
+  margin-top: 50px;
+  margin-left: 30px;
+  margin-top: 1.5rem;
+}
+.help-body p {
+  max-width: 80%;
+  color: black;
+  margin-left: 30px;
+  margin-top: 10px;
+  margin-bottom: 1rem;
+}
+.help-body a {
+  max-width: 80%;
+  color: rgb(255, 255, 255);
+  margin-left: 10px;
+  display: inline-flex; /* Aligns the icon and text horizontally */
+  align-items: center; /* Centers the icon and text vertically */
+  background-color: #e47a08; /* Bootstrap primary button color */
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+.help-body p {
+  inset: auto auto 80px 30px;
+  color: black;
+  font-family: "Nunito", sans-serif;
+}
+.help-body a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-family: "Nunito", sans-serif;
+}
+
+.material-symbols-outlined {
+  vertical-align: middle;
 }
 
 .landing h3 {
@@ -144,11 +207,87 @@
 }
 
 .women-safety {
-  font-size: 1rem;
-  margin: 1rem 1rem 6rem 1rem;
+  font-size: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  font-family: "Roboto", sans-serif;
+  background-color: #faece6;
+  margin-bottom: 1rem;
+  font-family: "Nunito", sans-serif;
+}
+.women-safety .sections {
+  width: 20rem;
+  height: auto;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: rgb(0, 0, 0);
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  margin: 25px;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(3.1px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 .women-safety h1 {
+  color: rgb(170, 77, 0);
   text-align: center;
+  font-size: 2rem;
+  text-decoration: 2px solid;
+}
+.women-safety h2 {
+  margin-left: 25px;
+  margin-top: 25px;
+  max-width: 80%;
+  color: black;
+}
+.women-safety h3 {
+  max-width: 80%;
+  color: black;
+  margin-top: 50px;
+  margin-left: 30px;
+  margin-top: 1.5rem;
+}
+.women-safety p {
+  max-width: 80%;
+  color: black;
+  margin-left: 30px;
+  margin-top: 10px;
+  margin-bottom: 1rem;
+}
+.women-safety a {
+  max-width: 80%;
+  color: rgb(255, 255, 255);
+  margin-left: 10px;
+  display: inline-flex; /* Aligns the icon and text horizontally */
+  align-items: center; /* Centers the icon and text vertically */
+  background-color: #e47a08; /* Bootstrap primary button color */
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+.women-safety p {
+  inset: auto auto 80px 30px;
+  color: black;
+  font-family: "Nunito", sans-serif;
+}
+.women-safety a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-family: "Nunito", sans-serif;
+}
+
+.material-symbols-outlined {
+  vertical-align: middle;
 }
 
 .earth {
@@ -362,7 +501,7 @@
 
 body {
   color: black;
-  font-family: "Inter", sans-serif;
+  font-family: "Nunito", sans-serif;
   font-size: 1.2rem;
   margin: 0;
   padding: 0;
