@@ -46,7 +46,7 @@
                 justify-content: center;
                 align-items: center;
             }
-
+            
             svg{
                 margin-bottom: .3rem;
             }
@@ -54,7 +54,7 @@
                 width: 1.6rem;
                 height: 1.6rem;
             }
-
+            
             .instruction-icon{
                 width: 1.5rem;
                 height: 1.5rem;
@@ -62,6 +62,13 @@
 
             .hospital-toggle{
                 margin: 0;
+                font-size: .8rem;
+            }
+            
+            ul{
+                padding-left: 0;
+                padding-right: 1rem;
+                padding-inline-start: 0;
             }
         }
     }
