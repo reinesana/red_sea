@@ -25,10 +25,25 @@
 
 .search-input {
   position: absolute;
-  top: 10px;
+  top: 5px;
   left: 10px;
   z-index: 10;
-  width: 150px;
+  width: 130px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.camp-select {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  z-index: 10;
+  width: 135px;
   padding: 10px;
   border-radius: 5px;
   background-color: white;
@@ -93,6 +108,9 @@
   font-size: 0.9rem;
   display: flex;
   align-items: start;
+  position: absolute;
+  right: 0;
+  top: 4rem;
 }
 .side-navigation p.greeting {
   margin: 0.7rem 0 0 0;
