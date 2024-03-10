@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512"><svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_0_3)">
+<rect width="512" height="512" fill="white"></rect>
+<g filter="url(#filter0_f_0_3)">
+<circle cx="255.5" cy="255.5" r="177.5" fill="#E9668D"></circle>
+</g>
+<g filter="url(#filter1_f_0_3)">
+<path d="M512.5 513.5L0 0H512.5V513.5Z" fill="#F54832" fill-opacity="0.34"></path>
+</g>
+<g filter="url(#filter2_f_0_3)">
+<path d="M512 511L0 -1V511H512Z" fill="#4C90F3" fill-opacity="0.35"></path>
+</g>
+<line y1="-7.5" x2="246.875" y2="-7.5" transform="matrix(0.274308 0.961642 -0.9819 0.189399 180.769 130.051)" stroke="white" stroke-width="15"></line>
+<path d="M262.169 115.807C250.113 133.9 213.207 147.372 194 144.198L221.391 242C247.099 238.826 292.272 225.081 280.925 201.274C269.578 177.468 368 150.162 368 150.162C368 150.162 343.852 141.588 327.009 134.446C313.534 128.733 347.862 105.887 361.455 92H325.996C309.744 92.3968 274.225 97.7136 262.169 115.807Z" stroke="white" stroke-width="15"></path>
+<path d="M195.907 128.622C197.226 133.703 195.042 138.667 191.028 139.709C187.014 140.751 182.69 137.478 181.371 132.397C180.052 127.316 182.236 122.352 186.25 121.31C190.264 120.268 194.588 123.542 195.907 128.622Z" fill="white"></path>
+<path d="M75 353.413C76.2418 356.555 82.2583 357.256 84.7045 358.116C87.5876 359.129 90.7836 358.638 93.7483 358.638C106.714 358.638 119.362 355.808 131.658 350.045C141.217 345.564 152.744 339.825 162.878 339.825C168.521 339.825 174.165 339.825 179.809 339.825C205.158 339.825 227.145 360.622 251.87 364.968C258.343 366.105 264.036 367 270.743 367C279.487 367 286.782 363.703 295.355 361.774C305.053 359.592 314.367 351.321 323.725 347.374C334.031 343.026 343.9 337.279 354.078 332.509C356.846 331.211 359.584 331.795 362.378 330.941C371.778 328.068 383.963 328.655 393.391 330.941C396.485 331.691 399.44 332.603 402.394 333.322C405.276 334.023 409.458 333.059 412.099 335.122C413.699 336.372 415.442 335.259 417.095 336.689C418.823 338.185 421.343 339.269 423.29 339.767C428.154 341.01 431.836 341.915 437 341.915" stroke="white" stroke-width="10" stroke-linecap="round"></path>
+<path d="M75 404.413C76.2418 407.555 82.2583 408.256 84.7045 409.116C87.5876 410.129 90.7836 409.638 93.7483 409.638C106.714 409.638 119.362 406.808 131.658 401.045C141.217 396.564 152.744 390.825 162.878 390.825C168.521 390.825 174.165 390.825 179.809 390.825C205.158 390.825 227.145 411.622 251.87 415.968C258.343 417.105 264.036 418 270.743 418C279.487 418 286.782 414.703 295.355 412.774C305.053 410.592 314.367 402.321 323.725 398.374C334.031 394.026 343.9 388.279 354.078 383.509C356.846 382.211 359.584 382.795 362.378 381.941C371.778 379.068 383.963 379.655 393.391 381.941C396.485 382.691 399.44 383.603 402.394 384.322C405.276 385.023 409.458 384.059 412.099 386.122C413.699 387.372 415.442 386.259 417.095 387.689C418.823 389.185 421.343 390.269 423.29 390.767C428.154 392.01 431.836 392.915 437 392.915" stroke="white" stroke-width="10" stroke-linecap="round"></path>
+</g>
+<defs>
+<filter id="SvgjsFilter1003" x="-22" y="-22" width="555" height="555" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
+<feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur_0_3"></feGaussianBlur>
+</filter>
+<filter id="SvgjsFilter1002" x="-100" y="-100" width="712.5" height="713.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
+<feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur_0_3"></feGaussianBlur>
+</filter>
+<filter id="SvgjsFilter1001" x="-100" y="-101" width="712" height="712" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
+<feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur_0_3"></feGaussianBlur>
+</filter>
+<clipPath id="SvgjsClipPath1000">
+<rect width="512" height="512" fill="white"></rect>
+</clipPath>
+</defs>
+</svg><style>@media (prefers-color-scheme: light) { :root { filter: none; } }
+</style></svg>
