@@ -1,4 +1,6 @@
 import { NavLink } from "react-router-dom";
+import "../styles/components/_navigation.scss";
+
 
 function Navigation() {
   return (
@@ -7,7 +9,7 @@ function Navigation() {
         <ul className="nav-menu">
           <li><NavLink to="/">Map</NavLink></li>
           <li><NavLink to="/help">Help</NavLink></li>
-          <li><NavLink to="/safety-for-women">Safety for Women</NavLink></li>
+          <li><NavLink to="/safety-for-women">Women's<br></br> Safety</NavLink></li>
         </ul>
       </nav>
     </div>
