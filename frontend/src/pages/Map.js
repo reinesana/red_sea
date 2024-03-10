@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import mapboxgl from "mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
+import MapComponent from "../components/MapComponent";
 
 function Map() {
   const [map, setMap] = useState(null);
@@ -48,7 +49,8 @@ function Map() {
                   "line-color": "#ff0000",
                   "line-width": 3,
                 },
-              });
+              })
+              
             })
             .catch((error) =>
               console.error("Error fetching the safest route:", error)
@@ -142,6 +144,9 @@ function Map() {
         placeholder="Search for a place"
         onChange={handleSearchChange}
       />
+
+<MapComponent />
+
       <select
         onChange={(e) => setSelectedCamp(camps[parseInt(e.target.value, 10)])}
       >
