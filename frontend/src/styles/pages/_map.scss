@@ -33,14 +33,14 @@
   align-items: center;
 }
 
-.search-input{
+.search-input {
   width: 75%;
-  margin: .9rem 0 0 0;
+  margin: 0.9rem 0 0 0;
 }
 .camp-select {
-  width: 80%;
-  margin: .3rem 0;
-  border: solid .12rem;
+  width: 79%;
+  margin: 0.3rem 0;
+  border: solid 0.12rem;
 }
 
 .search-input,
@@ -48,9 +48,12 @@
   position: relative;
   z-index: 10;
   padding: 10px;
-  border-radius: 5px;
-  background-color: white;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.55);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .search-input {
