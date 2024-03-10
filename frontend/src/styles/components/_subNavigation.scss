@@ -34,6 +34,29 @@
         .sub-nav-menu{
             text-decoration: none;
             font-size: .7rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+
+            li{
+                margin: .6rem 0;
+            }
+
+            li.pop-up{
+                align-items: center;
+                text-align: center;
+            }
+
+            .language-icon{
+                width: 1.6rem;
+                height: 1.6rem;
+            }
+
+            .instruction-icon{
+                width: 1.5rem;
+                height: 1.5rem;
+            }
         }
     }
 

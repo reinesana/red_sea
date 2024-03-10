@@ -20,12 +20,12 @@ function SubNavigation() {
       <nav className={`sub-nav ${isOpen ? "open" : "hidden"}`}>
         <p>Here's additional help for using this app!</p>
         <ul className="sub-nav-menu">
-          <li>
-            <MdLanguage />
+          <li className="pop-up">
+            <MdLanguage className="language-icon"/>
             <br></br>Language
           </li>
-          <li>
-            <FaBookOpenReader />
+          <li className="pop-up">
+            <FaBookOpenReader className="instruction-icon"/>
             <br></br>Instructions
           </li>
           <li>
