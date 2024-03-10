@@ -143,12 +143,14 @@ function Map() {
         type="text"
         placeholder="Search for a place"
         onChange={handleSearchChange}
+        className="search-input"
       />
 
 <MapComponent />
 
       <select
         onChange={(e) => setSelectedCamp(camps[parseInt(e.target.value, 10)])}
+        className="camp-select"
       >
         <option>Select a Camp</option>
         {camps.map((camp, index) => (
