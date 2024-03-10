@@ -1,11 +1,13 @@
 import React from "react";
 import "mapbox-gl/dist/mapbox-gl.css";
-import Home from "./pages/Home";
+import Header from "../components/Header";
+import Map from "./Map";
 
 const App = () => {
   return (
     <div>
-      <Home />
+      <Header />
+      <Map />
     </div>
   );
 };
