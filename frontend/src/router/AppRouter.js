@@ -8,12 +8,12 @@ import Landing from "../pages/Landing";
 function AppRouter() {
   return (
     <BrowserRouter basename="/">
-      <Header />
       <div className="main-wrapper">
         <Routes>
           <Route path="/" element={<Map />} />
           <Route path="/help" element={<Help />} />
           <Route path="/safety-for-women" element={<WomenSafety />} />
+          <Route path="/landing" element={<Landing />} />
         </Routes>
       </div>
     </BrowserRouter>
