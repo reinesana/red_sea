@@ -4,10 +4,10 @@ function LanguagesModal ({ onClose }) {
 
     return (
         <div className="languages-modal">
-            <button className='close-button' onClick={onClose}><IoClose />
-
-            
-            </button>
+            <div className='modal-content'>
+                <button className='close-button' onClick={onClose}><IoClose /></button>
+                <p>Lorem ipsum.</p>
+            </div>
         </div>
     )
 }
