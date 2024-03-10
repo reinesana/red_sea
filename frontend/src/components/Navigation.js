@@ -2,16 +2,15 @@ import { NavLink } from "react-router-dom";
 
 function Navigation() {
   return (
-    <header>
-      <h1>My App</h1>
-      <nav>
-        <ul>
+    <div className="navigation">
+      <nav className="thumb-nav">
+        <ul className="nav-menu">
           <li><NavLink to="/">Map</NavLink></li>
-          <li><NavLink to="/help"></NavLink>Help</li>
-          <li><NavLink to="/safety-for-women"></NavLink>Safety for Women</li>
+          <li><NavLink to="/help">Help</NavLink></li>
+          <li><NavLink to="/safety-for-women">Safety for Women</NavLink></li>
         </ul>
       </nav>
-    </header>
+    </div>
   );
 }
 export default Navigation;
