@@ -7,7 +7,8 @@ import Landing from "../pages/Landing";
 
 function AppRouter() {
   return (
-    <BrowserRouter basename="/">
+    <BrowserRouter className="body-wrapper" basename="/">
+      <Navigation className="main-navigation" />
       <div className="main-wrapper">
         <Routes>
           <Route path="/" element={<Map />} />
