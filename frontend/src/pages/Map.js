@@ -114,25 +114,57 @@ function Map() {
 
   useEffect(() => {
     if (map) {
-      // create the popup
-      const popup = new mapboxgl.Popup({ offset: 25 }).setText(
-        "hospital location"
-      );
+      // Array of hospital data containing coordinates, names, and image URLs
+      const hospitals = [
+        {
+          name: "European Gaza Hospital",
+          coordinates: [34.319611652471, 31.303419882672],
+          imageUrl:
+            "https://docs.mapbox.com/mapbox-gl-js/assets/washington-monument.jpg",
+        },
+        {
+          name: "Abu Yousef Alnajaar Hospital",
+          coordinates: [34.272854864692, 31.273284110358],
+          imageUrl:
+            "https://images-ext-2.discordapp.net/external/qJ4I7pBm21EzcximxO3lEB5uudS_NhyBySfGO6-dUOA/%3Fpanoid%3DHs9IVlOtamgTencZcRKpcA%26cb_client%3Dsearch.gws-prod.gps%26w%3D408%26h%3D240%26yaw%3D329.34808%26pitch%3D0%26thumbfov%3D100/https/streetviewpixels-pa.googleapis.com/v1/thumbnail?format=webp&width=816&height=480",
+        },
+        {
+          name: "Dar Al-Shifa Hospital",
+          coordinates: [34.443345125134, 31.524181390565],
+          imageUrl: "https://www.daralshifa.com.bh/storage/images/img_012.jpeg",
+        },
+        {
+          name: "Indonesian Hospital",
+          coordinates: [34.509292024246, 31.535066626413],
+          imageUrl:
+            "https://www.benarnews.org/english/news/indonesian/indonesia-gaza-hospital-not-hamas-base-ngo-says-11062023131809.html/@@images/41e37461-a96e-4345-91c4-6149fdac579d.jpeg",
+        },
+        {
+          name: "Awda Hospital Al Nuseirat",
+          coordinates: [34.389073130411, 31.452264498756],
+          imageUrl:
+            "https://www.pazcondignidad.org/wp-content/uploads/2024/02/IMG_3508.jpg",
+        },
+      ];
+      hospitals.forEach((hospital) => {
+        const popup = new mapboxgl.Popup({ offset: 25 }).setText(hospital.name);
 
-      const el = document.createElement("div");
-      el.id = "marker";
-      el.style.backgroundImage =
-        "url('https://docs.mapbox.com/mapbox-gl-js/assets/washington-monument.jpg')";
-      el.style.backgroundSize = "cover";
-      el.style.width = "50px";
-      el.style.height = "50px";
-      el.style.borderRadius = "50%";
-      el.style.cursor = "pointer";
+        // Create a marker element
+        const el = document.createElement("div");
+        el.className = "marker";
+        el.style.backgroundImage = `url('${hospital.imageUrl}')`;
+        el.style.backgroundSize = "cover";
+        el.style.width = "50px";
+        el.style.height = "50px";
+        el.style.borderRadius = "50%";
+        el.style.cursor = "pointer";
 
-      new mapboxgl.Marker(el)
-        .setLngLat([34.319611652471, 31.303419882672])
-        .setPopup(popup)
-        .addTo(map);
+        // Create the marker and add it to the map
+        new mapboxgl.Marker(el)
+          .setLngLat(hospital.coordinates)
+          .setPopup(popup)
+          .addTo(map);
+      });
     }
   }, [map]);
 
