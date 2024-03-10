@@ -126,6 +126,12 @@
 }
 .side-navigation .sub-nav .sub-nav-menu .hospital-toggle {
   margin: 0;
+  font-size: 0.8rem;
+}
+.side-navigation .sub-nav .sub-nav-menu ul {
+  padding-left: 0;
+  padding-right: 1rem;
+  padding-inline-start: 0;
 }
 .side-navigation .open {
   display: block;
@@ -161,6 +167,10 @@ Navigation {
 
 div.mapboxgl-control-container {
   display: none;
+}
+
+ul {
+  padding-inline-start: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
