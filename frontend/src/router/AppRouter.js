@@ -8,15 +8,15 @@ import Landing from "../pages/Landing";
 
 function AppRouter() {
   return (
-    <BrowserRouter className="body-wrapper" basename="/">
+    <BrowserRouter className="body-wrapper">
       <div className="main-wrapper">
         <Routes>
-          <Route path="/" element={<Map />} />
+          <Route path="/" element={<Landing />} />
+          <Route path="/map" element={<Map />} />
           <Route path="/help-centers" element={<Help />} />
           <Route path="/safety-for-women" element={<WomenSafety />} />
-          <Route path="/landing" element={<Landing />} />
         </Routes>
-      <SubNavigation />
+        <SubNavigation />
       </div>
       <Navigation className="main-navigation" />
     </BrowserRouter>
