@@ -3,11 +3,6 @@ import { FaMapPin } from "react-icons/fa";
 import { RiFirstAidKitFill } from "react-icons/ri";
 import { MdOutlineHealthAndSafety } from "react-icons/md";
 
-// For Help icon:
-// import { IoIosHelpCircleOutline } from "react-icons/io";
-// <IoIosHelpCircleOutline className="help-icon" />
-
-
 function Navigation() {
   return (
     <div className="navigation-container">
