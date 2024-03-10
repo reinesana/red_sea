@@ -18,9 +18,9 @@ function SubNavigation() {
       <nav className={`sub-nav ${isOpen ? 'open' : 'hidden'}`}>
         <p>Here's additional help for using this app!</p>
         <ul className="sub-nav-menu">
-          <li>lorem</li>
-          <li>lorem</li>
-          <li>lorem</li>
+          <li>Language</li>
+          <li>Help</li>
+          <li>Hospitals</li>
         </ul>
       </nav>
     </div>
