@@ -14,6 +14,10 @@ function Landing() {
         <select className="landing-select">
           <option>English</option>
           <option>Arabic</option>
+          <option>French</option>
+          <option>Russian</option>
+          <option>Japanese</option>
+          <option>Hindi</option>
         </select>
       </div>
       <Link to="/map">
