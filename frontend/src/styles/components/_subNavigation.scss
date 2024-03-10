@@ -1,0 +1,48 @@
+
+.side-navigation{
+
+    font-size: 1rem;
+    display: flex;
+    align-items: start;
+
+
+    button{
+        font-size: .8rem;
+        background-color: white;
+        border-radius: .3rem;
+        padding: .4rem;
+    }
+
+    .help-icon{
+        width: 1.3rem;
+        height: 1.3rem;
+    }
+
+    .sub-nav{
+        padding: .5rem;
+        margin: 0;
+        width: 8rem;
+        background-color: white;
+        border: solid .1rem;
+        border-radius: .3rem;
+
+        li, a{
+            list-style-type: none;
+            color: black;
+            // text-align: center;
+        }
+        
+        .sub-nav-menu{
+            text-decoration: none;
+
+        }
+    }
+
+    .open{
+        display: block;
+    }
+
+    .hidden{
+        display: none;
+    }
+}
