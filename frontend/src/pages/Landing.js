@@ -9,11 +9,13 @@ function Landing() {
         <p>welcome to Red Sea</p>
         <h3>A safe passage in the endless war</h3>
       </div>
-      <input
-        type="text"
-        placeholder="Enter your location"
-        className="landing-input"
-      />
+      <div className="language">
+        <p>Select your language</p>
+        <select className="landing-select">
+          <option>English</option>
+          <option>Arabic</option>
+        </select>
+      </div>
       <Link to="/map">
         <button className="landing-btn">Start</button>
       </Link>
