@@ -20,7 +20,6 @@ function LocationAwareApp() {
 
   return (
     <div className="main-wrapper">
-      {!isLandingPage && <SubNavigation />}
       {!isLandingPage && <Navigation className="main-navigation" />}
       <Routes>
         <Route path="/" element={<Landing />} />
@@ -28,6 +27,7 @@ function LocationAwareApp() {
         <Route path="/help-centers" element={<Help />} />
         <Route path="/safety-for-women" element={<WomenSafety />} />
       </Routes>
+      {!isLandingPage && <SubNavigation />}
     </div>
   );
 }

@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { IoIosHelpCircleOutline } from "react-icons/io";
+import { MdLanguage } from "react-icons/md";
+import { FaBookOpenReader } from "react-icons/fa6";
 
 function SubNavigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,12 +17,21 @@ function SubNavigation() {
         <br></br>
         Help
       </button>
-      <nav className={`sub-nav ${isOpen ? 'open' : 'hidden'}`}>
+      <nav className={`sub-nav ${isOpen ? "open" : "hidden"}`}>
         <p>Here's additional help for using this app!</p>
         <ul className="sub-nav-menu">
-          <li>Language</li>
-          <li>Help</li>
-          <li>Hospitals</li>
+          <li>
+            <MdLanguage />
+            <br></br>Language
+          </li>
+          <li>
+            <FaBookOpenReader />
+            <br></br>Instructions
+          </li>
+          <li>
+            See nearby hospitals:
+            <button>Hospitals</button>
+          </li>
         </ul>
       </nav>
     </div>

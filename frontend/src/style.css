@@ -84,6 +84,7 @@
 }
 .side-navigation .sub-nav .sub-nav-menu {
   text-decoration: none;
+  font-size: 0.7rem;
 }
 .side-navigation .open {
   display: block;
