@@ -93,6 +93,25 @@
 .side-navigation .sub-nav .sub-nav-menu {
   text-decoration: none;
   font-size: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+.side-navigation .sub-nav .sub-nav-menu li {
+  margin: 0.6rem 0;
+}
+.side-navigation .sub-nav .sub-nav-menu li.pop-up {
+  align-items: center;
+  text-align: center;
+}
+.side-navigation .sub-nav .sub-nav-menu .language-icon {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+.side-navigation .sub-nav .sub-nav-menu .instruction-icon {
+  width: 1.5rem;
+  height: 1.5rem;
 }
 .side-navigation .open {
   display: block;
