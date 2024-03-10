@@ -1,4 +1,4 @@
-function Header() {
+function Navigation() {
   return (
     <header>
       <h1>My App</h1>
@@ -12,4 +12,4 @@ function Header() {
     </header>
   );
 }
-export default Header;
+export default Navigation;
