@@ -1,9 +1,13 @@
 
 .side-navigation{
 
-    font-size: 1rem;
+    font-size: .9rem;
     display: flex;
     align-items: start;
+
+    p.greeting{
+        margin: .7rem 0 0 0;
+    }
 
     button{
         font-size: .8rem;

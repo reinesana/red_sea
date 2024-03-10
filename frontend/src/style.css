@@ -1,9 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 .help {
   font-size: 1rem;
-  margin: 1rem;
+  margin: 1rem 1rem 2rem 1rem;
 }
 .help h1 {
+  text-align: center;
+}
+.help h3 {
   text-align: center;
 }
 
@@ -22,7 +25,7 @@
 
 .women-safety {
   font-size: 1rem;
-  margin: 1rem;
+  margin: 1rem 1rem 3rem 1rem;
 }
 .women-safety h1 {
   text-align: center;
@@ -47,7 +50,7 @@
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-color: #D0E3FF;
+  background-color: #F2A2B1;
 }
 .nav-menu .map-icon {
   height: 1.3rem;
@@ -72,13 +75,16 @@
 }
 
 .side-navigation {
-  font-size: 1rem;
+  font-size: 0.9rem;
   display: flex;
   align-items: start;
 }
+.side-navigation p.greeting {
+  margin: 0.7rem 0 0 0;
+}
 .side-navigation button {
   font-size: 0.8rem;
-  background-color: white;
+  background: linear-gradient(to bottom, #fce0d7, #d9668d);
   border-radius: 0.3rem;
   padding: 0.4rem;
 }
