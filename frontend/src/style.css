@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-evenly;
   list-style-type: none;
-  font-size: 1rem;
+  font-size: 0.85rem;
   align-items: center;
   padding: 0.6rem 0;
   margin: 0;
@@ -11,10 +11,11 @@
 .nav-menu .map-icon {
   height: 1.3rem;
   width: 1.3rem;
+  margin-bottom: 0.3rem;
 }
-.nav-menu .help-icon {
-  height: 1.7rem;
-  width: 1.7rem;
+.nav-menu .help-center-icon {
+  height: 1.5rem;
+  width: 1.5rem;
 }
 .nav-menu .safety-icon {
   height: 1.7rem;
@@ -25,8 +26,7 @@
   text-decoration: none;
   text-align: center;
 }
-.nav-menu .map-li,
-.nav-menu .help-li {
+.nav-menu .map-li {
   margin: 0 1.3rem;
 }
 
@@ -35,6 +35,23 @@ body {
   font-size: 1.2rem;
   margin: 0;
   padding: 0;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+BrowserRouter {
+  position: relative;
+}
+
+Navigation {
+  position: sticky;
+  bottom: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

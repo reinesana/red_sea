@@ -8,3 +8,20 @@ body{
     margin: 0;
     padding: 0;
 }
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+BrowserRouter{
+    position: relative;
+}
+
+Navigation{
+    position: sticky;
+    bottom: 0;
+}
