@@ -70,21 +70,6 @@
   width: 1.3rem;
   height: 1.3rem;
 }
-.side-navigation .sub-nav {
-  padding: 0.5rem;
-  margin: 0;
-  width: 8rem;
-  background-color: white;
-  border: solid 0.1rem;
-  border-radius: 0.3rem;
-}
-.side-navigation .sub-nav li, .side-navigation .sub-nav a {
-  list-style-type: none;
-  color: black;
-}
-.side-navigation .sub-nav .sub-nav-menu {
-  text-decoration: none;
-}
 
 body {
   color: black;
