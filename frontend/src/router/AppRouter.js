@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes, GlobalProvider } from "react-router-dom";
+import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 import Navigation from "../components/Navigation";
 import SubNavigation from "../components/SubNavigation";
 import Help from "../pages/Help";
@@ -9,17 +9,26 @@ import Landing from "../pages/Landing";
 function AppRouter() {
   return (
     <BrowserRouter className="body-wrapper">
-      <div className="main-wrapper">
-        <Routes>
-          <Route path="/" element={<Landing />} />
-          <Route path="/map" element={<Map />} />
-          <Route path="/help-centers" element={<Help />} />
-          <Route path="/safety-for-women" element={<WomenSafety />} />
-        </Routes>
-        <SubNavigation />
-      </div>
-      <Navigation className="main-navigation" />
+      <LocationAwareApp />
     </BrowserRouter>
+  );
+}
+
+function LocationAwareApp() {
+  const location = useLocation();
+  const isLandingPage = location.pathname === "/";
+
+  return (
+    <div className="main-wrapper">
+      {!isLandingPage && <SubNavigation />}
+      {!isLandingPage && <Navigation className="main-navigation" />}
+      <Routes>
+        <Route path="/" element={<Landing />} />
+        <Route path="/map" element={<Map />} />
+        <Route path="/help-centers" element={<Help />} />
+        <Route path="/safety-for-women" element={<WomenSafety />} />
+      </Routes>
+    </div>
   );
 }
 
