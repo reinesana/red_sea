@@ -1,12 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
-.help {
+.help-body {
   font-size: 1rem;
   margin: 1rem 1rem 6rem 1rem;
+  border-radius: 2rem;
+  padding: 1rem;
 }
-.help h1 {
+.help-body .help-center {
+  background-color: #D0E3FF;
+  padding: 1rem;
+  border-radius: 1.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 3px 3px 3px #7b8fae;
+}
+.help-body h1 {
   text-align: center;
 }
-.help h3 {
+.help-body h3 {
   text-align: center;
 }
 
@@ -153,9 +162,10 @@
   padding: 0.6rem 0;
   margin: 0;
   position: fixed;
+  z-index: 1000;
   bottom: 0;
   width: 100%;
-  background-image: linear-gradient(to right top, #e01363, #ed374f, #f2553c, #f17228, #eb8d12);
+  background-color: rgb(255, 255, 255);
 }
 .nav-menu .map-icon {
   height: 1.3rem;
@@ -170,8 +180,9 @@
   height: 1.7rem;
   width: 1.7rem;
 }
-.nav-menu li, .nav-menu a {
-  color: white;
+.nav-menu li,
+.nav-menu a {
+  color: #f1330d;
   text-decoration: none;
   text-align: center;
 }
@@ -198,7 +209,9 @@
 }
 .side-navigation button {
   font-size: 0.8rem;
-  background: linear-gradient(to bottom, #fce0d7, #d9668d);
+  color: #fff;
+  border: none;
+  background: linear-gradient(to right top, #e01363, #ed374f, #f2553c, #f17228, #eb8d12);
   border-radius: 0.3rem;
   padding: 0.4rem;
 }
@@ -214,7 +227,8 @@
   border: solid 0.1rem;
   border-radius: 0.3rem;
 }
-.side-navigation .sub-nav li, .side-navigation .sub-nav a {
+.side-navigation .sub-nav li,
+.side-navigation .sub-nav a {
   list-style-type: none;
   color: black;
 }
