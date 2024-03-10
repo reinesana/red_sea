@@ -64,6 +64,11 @@
   justify-content: space-between;
 }
 
+.location-input {
+  display: flex;
+  flex-direction: column;
+}
+
 .women-safety {
   font-size: 1rem;
   margin: 1rem 1rem 6rem 1rem;
@@ -91,7 +96,7 @@
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-color: #F2A2B1;
+  background-image: linear-gradient(to right top, #e01363, #ed374f, #f2553c, #f17228, #eb8d12);
 }
 .nav-menu .map-icon {
   height: 1.3rem;
@@ -107,7 +112,7 @@
   width: 1.7rem;
 }
 .nav-menu li, .nav-menu a {
-  color: black;
+  color: white;
   text-decoration: none;
   text-align: center;
 }

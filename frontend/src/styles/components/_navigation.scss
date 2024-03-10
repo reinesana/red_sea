@@ -11,9 +11,7 @@
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: #F2A2B1;
-
-    .map-icon{
+    background-image: linear-gradient(to right top, #e01363, #ed374f, #f2553c, #f17228, #eb8d12);    .map-icon{
         height: 1.3rem;
         width: 1.3rem;
         margin-bottom: .3rem;
@@ -30,7 +28,7 @@
     }
 
     li, a{
-        color: black;
+        color: white;
         text-decoration: none;
         text-align: center;
     }

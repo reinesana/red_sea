@@ -160,24 +160,26 @@ function Map() {
 
   return (
     <div>
-      <input
-        type="text"
-        placeholder="Search for a place"
-        onChange={handleSearchChange}
-        className="search-input"
-      />
+      <div className="location-input">
+        <input
+          type="text"
+          placeholder="Search for a place"
+          onChange={handleSearchChange}
+          className="search-input"
+        />
 
-      <select
-        onChange={(e) => setSelectedCamp(camps[parseInt(e.target.value, 10)])}
-        className="camp-select"
-      >
-        <option>Select a Camp</option>
-        {camps.map((camp, index) => (
-          <option key={index} value={index}>
-            {camp.camp}
-          </option>
-        ))}
-      </select>
+        <select
+          onChange={(e) => setSelectedCamp(camps[parseInt(e.target.value, 10)])}
+          className="camp-select"
+        >
+          <option>Select a Camp</option>
+          {camps.map((camp, index) => (
+            <option key={index} value={index}>
+              {camp.camp}
+            </option>
+          ))}
+        </select>
+      </div>
       <div
         id="map"
         style={{

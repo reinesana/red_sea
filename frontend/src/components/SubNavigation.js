@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { IoIosHelpCircleOutline } from "react-icons/io";
 import { MdLanguage } from "react-icons/md";
 import { FaBookOpenReader } from "react-icons/fa6";
@@ -13,15 +13,38 @@ function SubNavigation() {
     setIsOpen(!isOpen);
   };
 
-  const [showModal1, setShowModal1] = useState(false)
-  const [showModal2, setShowModal2] = useState(false)
+  const [showModal1, setShowModal1] = useState(false);
+  const [showModal2, setShowModal2] = useState(false);
+
+  const subNavRef = useRef(null);
+
+  useEffect(() => {
+    const handleOutsideClick = (e) => {
+      if (
+        isOpen &&
+        subNavRef.current &&
+        !subNavRef.current.contains(e.target) &&
+        !e.target.closest(".open")
+      ) {
+        setIsOpen(false);
+        setShowModal1(false);
+        setShowModal2(false);
+      }
+    };
+
+    document.addEventListener("click", handleOutsideClick);
+
+    return () => {
+      document.removeEventListener("click", handleOutsideClick);
+    };
+  }, [isOpen]);
 
   return (
     <div className="side-navigation">
-      <button onClick={toggleMenu} className="open">
+      <button onClick={toggleMenu} className={`open ${isOpen ? "active" : ""}`}>
         <IoIosHelpCircleOutline className="help-icon" />
       </button>
-      <nav className={`sub-nav ${isOpen ? "open" : "hidden"}`}>
+      <nav className={`sub-nav ${isOpen ? "open" : "hidden"}`} ref={subNavRef}>
         <p className="greeting">Here's additional help for using this app!</p>
         <ul className="sub-nav-menu">
           <li className="pop-up" onClick={() => setShowModal1(true)}>
