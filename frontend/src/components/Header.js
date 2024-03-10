@@ -6,9 +6,10 @@ function Header() {
         <ul>
           <li>Home</li>
           <li>Map</li>
-          <li>Contact</li>
+          <li>Help</li>
         </ul>
       </nav>
     </header>
   );
 }
+export default Header;
