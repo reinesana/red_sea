@@ -2,6 +2,7 @@ import { useState } from "react";
 import { IoIosHelpCircleOutline } from "react-icons/io";
 import { MdLanguage } from "react-icons/md";
 import { FaBookOpenReader } from "react-icons/fa6";
+import HospitalSwitch from "./HospitalSwitch";
 
 function SubNavigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -31,6 +32,7 @@ function SubNavigation() {
           <li>
             See nearby hospitals:
             <button>Hospitals</button>
+            <HospitalSwitch/>
           </li>
         </ul>
       </nav>
