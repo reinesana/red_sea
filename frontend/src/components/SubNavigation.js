@@ -15,11 +15,9 @@ function SubNavigation() {
     <div className="side-navigation">
       <button onClick={toggleMenu} className="open">
         <IoIosHelpCircleOutline className="help-icon" />
-        <br></br>
-        Help
       </button>
       <nav className={`sub-nav ${isOpen ? "open" : "hidden"}`}>
-        <p>Here's additional help for using this app!</p>
+        <p className="greeting">Here's additional help for using this app!</p>
         <ul className="sub-nav-menu">
           <li className="pop-up">
             <MdLanguage className="language-icon"/>
