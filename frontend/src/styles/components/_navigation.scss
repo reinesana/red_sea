@@ -1,0 +1,13 @@
+// @use "../variables" as *;
+
+.nav-menu{
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    font-size: 1rem;
+    
+    li, a{
+        color: black;
+        text-decoration: none;
+    }
+}
