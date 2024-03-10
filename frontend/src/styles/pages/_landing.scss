@@ -9,23 +9,23 @@
     margin-bottom: 20px;
     text-align: center;
   }
-}
-.landing-btn {
-  padding: 10px 50px;
-  position: fixed;
-  bottom: 20%;
-  right: 50%;
-  transform: translateX(50%);
-  background: linear-gradient(
-    to right top,
-    #e01363,
-    #ed374f,
-    #f2553c,
-    #f17228,
-    #eb8d12
-  );
-  border: none;
-  color: white;
-  border-radius: 5px;
-  cursor: pointer;
+  .landing-btn {
+    padding: 10px 50px;
+    position: fixed;
+    bottom: 20%;
+    right: 50%;
+    transform: translateX(50%);
+    background: linear-gradient(
+      to right top,
+      #e01363,
+      #ed374f,
+      #f2553c,
+      #f17228,
+      #eb8d12
+    );
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
 }
