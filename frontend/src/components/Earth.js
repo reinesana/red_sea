@@ -10,7 +10,7 @@ const Earth = () => {
 
     const map = new mapboxgl.Map({
       container: "map",
-      style: "mapbox://styles/gprem09/cltl2l1e0013701o84kkc3nqv",
+      style: "mapbox://styles/gprem09/cltl7l6vq014901oi92wuer6w",
       center: [-74.5, 40],
       zoom: 0.01,
     });

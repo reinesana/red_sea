@@ -7,7 +7,7 @@
   text-align: center;
 }
 
-button {
+.landing-btn {
   padding: 10px 50px;
   position: fixed;
   bottom: 20%;

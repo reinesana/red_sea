@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 
 function Landing() {
   return (
-    <div>
+    <div className="landing">
       <h1>Welcome to the Landing Page</h1>
       <Earth />
       <Link to="/map">
-        <button>Start</button>
+        <button className="landing-btn">Start</button>
       </Link>
     </div>
   );
