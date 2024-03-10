@@ -1,10 +1,33 @@
 @import "./pages/pages";
 @import "./components/components";
 @import "variables";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 body{
     color: black;
+    font-family: "Inter", sans-serif;
     font-size: 1.2rem;
     margin: 0;
     padding: 0;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+BrowserRouter{
+    position: relative;
+}
+
+Navigation{
+    position: sticky;
+    bottom: 0;
+}
+
+div.mapboxgl-control-container{
+    display: none;
 }

@@ -1,27 +1,38 @@
 import { NavLink } from "react-router-dom";
-import { IoIosHelpCircleOutline } from "react-icons/io";
 import { FaMapPin } from "react-icons/fa";
+import { RiFirstAidKitFill } from "react-icons/ri";
 import { MdOutlineHealthAndSafety } from "react-icons/md";
+
+// For Help icon:
+// import { IoIosHelpCircleOutline } from "react-icons/io";
+// <IoIosHelpCircleOutline className="help-icon" />
+
 
 function Navigation() {
   return (
-    <div className="navigation">
+    <div className="navigation-container">
       <nav className="thumb-nav">
         <ul className="nav-menu">
           <li className="map-li">
-            <FaMapPin className="map-icon" />
-            <br></br>
-            <NavLink to="/">Map</NavLink>
-          </li>
-          <li className="help-li">
-            <IoIosHelpCircleOutline className="help-icon" />
-            <br></br>
-            <NavLink to="/help">Help</NavLink>
+            <NavLink to="/">
+              <FaMapPin className="map-icon" />
+              <br></br>
+              Map
+            </NavLink>
           </li>
           <li>
-            <MdOutlineHealthAndSafety className="safety-icon"/>
-            <br></br>
-            <NavLink to="/safety-for-women">Women's Safety</NavLink>
+            <NavLink to="/safety-for-women">
+              <MdOutlineHealthAndSafety className="safety-icon" />
+              <br></br>
+              Women's Safety
+            </NavLink>
+          </li>
+          <li className="help-center-li">
+            <NavLink to="/help-centers">
+              <RiFirstAidKitFill className="help-center-icon" />
+              <br></br>
+              Help Centers
+            </NavLink>
           </li>
         </ul>
       </nav>

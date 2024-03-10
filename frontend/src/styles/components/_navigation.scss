@@ -4,19 +4,23 @@
     display: flex;
     justify-content: space-evenly;
     list-style-type: none;
-    font-size: 1rem;
+    font-size: .85rem;
     align-items: center;
     padding: .6rem 0;
     margin: 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 
     .map-icon{
         height: 1.3rem;
         width: 1.3rem;
+        margin-bottom: .3rem;
     }
     
-    .help-icon{
-        height: 1.7rem;
-        width: 1.7rem;
+    .help-center-icon{
+        height: 1.5rem;
+        width: 1.5rem;
     }
 
     .safety-icon{
@@ -30,8 +34,7 @@
         text-align: center;
     }
 
-    .map-li,
-    .help-li{
+    .map-li{
         margin: 0 1.3rem;
     }
 

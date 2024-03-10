@@ -1,25 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+.help {
+  font-size: 1rem;
+  margin: 1rem;
+}
+.help h1 {
+  text-align: center;
+}
+
 .mapboxgl-canvas {
   width: 240px;
   height: 600px;
+}
+
+.women-safety {
+  font-size: 1rem;
+  margin: 1rem;
+}
+.women-safety h1 {
+  text-align: center;
 }
 
 .nav-menu {
   display: flex;
   justify-content: space-evenly;
   list-style-type: none;
-  font-size: 1rem;
+  font-size: 0.85rem;
   align-items: center;
   padding: 0.6rem 0;
   margin: 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   background-color: #D0E3FF;
 }
 .nav-menu .map-icon {
   height: 1.3rem;
   width: 1.3rem;
+  margin-bottom: 0.3rem;
 }
-.nav-menu .help-icon {
-  height: 1.7rem;
-  width: 1.7rem;
+.nav-menu .help-center-icon {
+  height: 1.5rem;
+  width: 1.5rem;
 }
 .nav-menu .safety-icon {
   height: 1.7rem;
@@ -30,16 +51,37 @@
   text-decoration: none;
   text-align: center;
 }
-.nav-menu .map-li,
-.nav-menu .help-li {
+.nav-menu .map-li {
   margin: 0 1.3rem;
 }
 
 body {
   color: black;
+  font-family: "Inter", sans-serif;
   font-size: 1.2rem;
   margin: 0;
   padding: 0;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+BrowserRouter {
+  position: relative;
+}
+
+Navigation {
+  position: sticky;
+  bottom: 0;
+}
+
+div.mapboxgl-control-container {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
