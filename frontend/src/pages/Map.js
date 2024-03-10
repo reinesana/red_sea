@@ -120,7 +120,7 @@ function Map() {
           name: "European Gaza Hospital",
           coordinates: [34.319611652471, 31.303419882672],
           imageUrl:
-            "https://docs.mapbox.com/mapbox-gl-js/assets/washington-monument.jpg",
+            "https://lh5.googleusercontent.com/p/AF1QipPdC3tbd7Re7ml0UypD_NsE_X5xH18XubLAqoVK=w408-h725-k-no",
         },
         {
           name: "Abu Yousef Alnajaar Hospital",

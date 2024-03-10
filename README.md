@@ -1,6 +1,8 @@
 # cmd-f 2024: hackathon
 
-<h3>refugee camps data</h3> 
+Red Sea is an accessible web-app application and solution for women in Gaza, offering safe routes to refugee camps, essential medical resources and humanitarian aid.
+<br>
+<h4>refugee camps data</h4> 
 Beach camp, Bureij camp, Deir El-Balah Camp, Jabalia Camp, Khan Younis Camp, Maghazi camp, Nuseirat camp, Rafah camp
 <br> <br>
 from https://www.unrwa.org/where-we-work/gaza-strip/beach-camp
