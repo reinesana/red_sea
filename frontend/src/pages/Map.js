@@ -135,10 +135,6 @@ function Map() {
     }
   };
 
-
-
-
-
   return (
     <div>
       <input
@@ -160,7 +156,7 @@ function Map() {
         id="map"
         style={{
           position: "absolute",
-          top: 200,
+          top: 0,
           bottom: 0,
           right: 1,
           width: "100%",
