@@ -23,15 +23,14 @@ function SubNavigation() {
         <ul className="sub-nav-menu">
           <li className="pop-up">
             <MdLanguage className="language-icon"/>
-            <br></br>Language
+            Language
           </li>
           <li className="pop-up">
             <FaBookOpenReader className="instruction-icon"/>
-            <br></br>Instructions
+            Instructions
           </li>
-          <li>
-            See nearby hospitals:
-            <button>Hospitals</button>
+          <li className="hospital-toggle">
+            <p>See nearby hospitals:</p>
             <HospitalSwitch/>
           </li>
         </ul>

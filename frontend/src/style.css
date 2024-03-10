@@ -96,14 +96,17 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: start;
 }
 .side-navigation .sub-nav .sub-nav-menu li {
   margin: 0.6rem 0;
-}
-.side-navigation .sub-nav .sub-nav-menu li.pop-up {
-  align-items: center;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.side-navigation .sub-nav .sub-nav-menu svg {
+  margin-bottom: 0.3rem;
 }
 .side-navigation .sub-nav .sub-nav-menu .language-icon {
   width: 1.6rem;
@@ -112,6 +115,9 @@ button {
 .side-navigation .sub-nav .sub-nav-menu .instruction-icon {
   width: 1.5rem;
   height: 1.5rem;
+}
+.side-navigation .sub-nav .sub-nav-menu .hospital-toggle {
+  margin: 0;
 }
 .side-navigation .open {
   display: block;
