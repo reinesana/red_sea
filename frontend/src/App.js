@@ -1,7 +1,7 @@
 import React from "react";
 import "mapbox-gl/dist/mapbox-gl.css";
-import Header from "../components/Header";
-import Map from "./Map";
+import Header from "./components/Header";
+import Map from "./pages/Map";
 
 const App = () => {
   return (
