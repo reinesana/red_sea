@@ -48,8 +48,7 @@ function Map() {
                   "line-color": "#ff0000",
                   "line-width": 3,
                 },
-              })
-              
+              });
             })
             .catch((error) =>
               console.error("Error fetching the safest route:", error)
@@ -113,6 +112,30 @@ function Map() {
     }
   }, [map, selectedCamp, searchLocation]);
 
+  useEffect(() => {
+    if (map) {
+      // create the popup
+      const popup = new mapboxgl.Popup({ offset: 25 }).setText(
+        "hospital location"
+      );
+
+      const el = document.createElement("div");
+      el.id = "marker";
+      el.style.backgroundImage =
+        "url('https://docs.mapbox.com/mapbox-gl-js/assets/washington-monument.jpg')";
+      el.style.backgroundSize = "cover";
+      el.style.width = "50px";
+      el.style.height = "50px";
+      el.style.borderRadius = "50%";
+      el.style.cursor = "pointer";
+
+      new mapboxgl.Marker(el)
+        .setLngLat([34.319611652471, 31.303419882672])
+        .setPopup(popup)
+        .addTo(map);
+    }
+  }, [map]);
+
   const handleSearchChange = (e) => {
     const searchText = e.target.value;
     if (searchText.length > 3) {
@@ -128,8 +151,7 @@ function Map() {
           if (places.length > 0) {
             const place = places[0];
             const [lng, lat] = place.center;
-
-            setSearchLocation({ lat, lng }); // Update the state with the new location
+            setSearchLocation({ lat, lng });
           }
         })
         .catch((error) => console.error("Error during geocoding:", error));
