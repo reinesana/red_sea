@@ -6,12 +6,12 @@ function Navigation() {
       <h1>My App</h1>
       <nav>
         <ul>
-          <li>Home</li>
-          <li>Map</li>
-          <li>Help</li>
+          <li><NavLink to="/">Map</NavLink></li>
+          <li><NavLink to="/help"></NavLink>Help</li>
+          <li><NavLink to="/safety-for-women"></NavLink>Safety for Women</li>
         </ul>
       </nav>
-    </div>
+    </header>
   );
 }
 export default Navigation;
