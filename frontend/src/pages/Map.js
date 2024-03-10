@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import mapboxgl from "mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
-import MapComponent from "../components/MapComponent";
 
 function Map() {
   const [map, setMap] = useState(null);
@@ -145,8 +144,6 @@ function Map() {
         onChange={handleSearchChange}
         className="search-input"
       />
-
-<MapComponent />
 
       <select
         onChange={(e) => setSelectedCamp(camps[parseInt(e.target.value, 10)])}
