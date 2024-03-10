@@ -166,6 +166,9 @@
 .side-navigation .sub-nav .sub-nav-menu svg {
   margin-bottom: 0.3rem;
 }
+.side-navigation .sub-nav .sub-nav-menu .close-button svg {
+  margin: 0;
+}
 .side-navigation .sub-nav .sub-nav-menu .language-icon {
   width: 1.6rem;
   height: 1.6rem;
@@ -188,6 +191,76 @@
 }
 .side-navigation .hidden {
   display: none;
+}
+
+.help-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70vw;
+  height: 30vh;
+  background: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.languages-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70vw;
+  height: 30vh;
+  background: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.language-change {
+  width: 45%;
+  border: solid 0.09rem;
+  padding: 0.5rem 0.6rem;
+  border-radius: 0.3rem;
+}
+.language-change option {
+  padding: 5rem 0;
 }
 
 body {

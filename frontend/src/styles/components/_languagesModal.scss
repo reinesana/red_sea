@@ -26,6 +26,15 @@
     background: none;
     border: none;
     cursor: pointer;
-
 }
 
+.language-change{
+    width: 45%;
+    border: solid .09rem;
+    padding: .5rem .6rem;
+    border-radius: .3rem;
+
+    option{
+        padding: 5rem 0;
+    }
+}

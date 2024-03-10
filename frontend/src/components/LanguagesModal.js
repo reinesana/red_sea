@@ -1,12 +1,15 @@
+import React from 'react';
 import { IoClose } from 'react-icons/io5';
+import LanguageSelector from './LanguageSelector';
 
-function LanguagesModal ({ onClose }) {
+function LanguagesModal ({ onClose, apiKey }) {
 
     return (
         <div className="languages-modal">
             <div className='modal-content'>
                 <button className='close-button' onClick={onClose}><IoClose /></button>
-                <p>Lorem ipsum.</p>
+                <h2>Please choose your language</h2>
+                <LanguageSelector apiKey={apiKey} />
             </div>
         </div>
     )
