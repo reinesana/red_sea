@@ -167,7 +167,6 @@ function Map() {
           onChange={handleSearchChange}
           className="search-input"
         />
-
         <select
           onChange={(e) => setSelectedCamp(camps[parseInt(e.target.value, 10)])}
           className="camp-select"
