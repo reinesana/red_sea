@@ -45,7 +45,8 @@
 .landing .welcome {
   position: fixed;
   font-size: 2em;
-  top: 50%;
+  width: 20rem;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
   margin-top: 25px;
