@@ -23,7 +23,7 @@
 .landing .landing-btn {
   padding: 10px 50px;
   position: fixed;
-  bottom: 20%;
+  bottom: 15%;
   right: 50%;
   transform: translateX(50%);
   background: linear-gradient(to right top, #e01363, #ed374f, #f2553c, #f17228, #eb8d12);
@@ -110,19 +110,23 @@
   width: 100%;
   height: 600px;
   position: fixed;
-  top: -180px;
+  top: -200px;
   z-index: -10;
 }
 
 .landing-input {
   padding: 10px;
   width: 60%;
+  position: fixed;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .welcome {
   position: fixed;
   font-size: 2em;
-  top: 50%;
+  top: 47%;
   margin-bottom: 20px;
 }
 
