@@ -6,7 +6,7 @@ function Landing() {
     <div className="landing">
       <Earth />
       <div className="welcome">
-        <p>welcome to Red Sea</p>
+        <p>Welcome to Red Sea</p>
         <h3>A safe passage in the endless war</h3>
       </div>
       <div className="language">
