@@ -23,6 +23,9 @@
   align-items: center;
   padding: 0.6rem 0;
   margin: 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   background-color: #D0E3FF;
 }
 .nav-menu .map-icon {
@@ -70,6 +73,10 @@ BrowserRouter {
 Navigation {
   position: sticky;
   bottom: 0;
+}
+
+div.mapboxgl-control-container {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
