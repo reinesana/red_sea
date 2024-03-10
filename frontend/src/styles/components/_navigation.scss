@@ -38,4 +38,11 @@
     .map-li{
         margin: 0 1.3rem;
     }
+    
+    .nav-menu li:active,
+    .nav-menu li:focus,
+    .nav-menu li:hover {
+        background-color: white;
+        color: white;
+    }
 }

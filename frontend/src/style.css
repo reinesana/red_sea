@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 .help {
   font-size: 1rem;
-  margin: 1rem 1rem 2rem 1rem;
+  margin: 1rem 1rem 6rem 1rem;
 }
 .help h1 {
   text-align: center;
@@ -66,7 +66,7 @@
 
 .women-safety {
   font-size: 1rem;
-  margin: 1rem 1rem 3rem 1rem;
+  margin: 1rem 1rem 6rem 1rem;
 }
 .women-safety h1 {
   text-align: center;
@@ -113,6 +113,12 @@
 }
 .nav-menu .map-li {
   margin: 0 1.3rem;
+}
+.nav-menu .nav-menu li:active,
+.nav-menu .nav-menu li:focus,
+.nav-menu .nav-menu li:hover {
+  background-color: white;
+  color: white;
 }
 
 .side-navigation {
@@ -245,6 +251,10 @@
   justify-content: center;
   align-items: center;
   height: 100%;
+  margin-top: 0;
+}
+.modal-content h2 {
+  margin-top: 0;
 }
 
 .close-button {
