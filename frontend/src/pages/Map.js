@@ -18,7 +18,7 @@ function Map() {
         mapboxgl.accessToken = data.mapboxToken;
         const initMap = new mapboxgl.Map({
           container: "map",
-          style: "mapbox://styles/mapbox/streets-v11",
+          style: "mapbox://styles/gprem09/cltkyes67013v01pt2ob5fgqk",
           center: [34.3824, 31.4227],
           zoom: 10,
         });
