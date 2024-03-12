@@ -23,25 +23,24 @@ As we proceeded through cmd-f 2024, our objective was to provide refugee women w
 
 <br>
 
-## What it does
+## Description
 Red Sea is a web application that uses a dataset of real-time conflicts in Gaza to optimize safe routes for refugee women looking for a safe passage to refugee camps in Gaza. The user can request for humanitarian aid based on their personal needs and also has an option to view medical facilities nearby. The web application also offers various language options and easy to use interface for immediate assistance. 
 
 <br>
 
-## How we built it
+## Implementation
 Red Sea uses real time data on the coordinates, fatalities and conflict zones in Gaza from ACLED. The application assigns a safety level to each coordinate based on the type of event (riots, air strike, protests. etc) and the number of fatalities. Leveraging a KNN machine learning model, we were able to assign a safety level to surrounding roads on a route using forward geocoding from MAPBOX API, optimizing the safest route for the user. The frontend was built using React and MapBox API for fetching building the map and fetching the routes. Additionally, the machine learning model was built using python and flask.
 
 <br>
 
-## Challenges we ran into
-Figuring out an implementation for assigning safety levels for each route was challenging, however, we decided on fetching the coordinate points for each route and using the KNN model to assign the safety level of the nearest conflict zone to each turning point. We also had a challenge calling and using the google translate API for the app translation. Assigning hospital marking and indicators toggle on/off the map proved to also be a challenge as it incorporated tools we were unfamiliar with from MapBox API. 
+## Accomplishments
+Our biggest accomplishment was being able to leverage routes using machine learning. Extracting the coordinate points on the route and assigning safety levels was troubling, however, we were successful in the end. We are also proud of the UI design on the landing page, where we feature a rotating globe as well as language setting options for the user. 
 
 <br>
-## Accomplishments that we're proud of
-Our biggest accomplishment was being able to leverage routes using machine learning. Extracting the coordinate points on the route and assigning safety levels was troubling, however, we were successful in the end. We are also proud of the UI design on the landing page, where we feature a rotating globe as well as language setting options for the user. 
-<br>
+
 ## What we learned
 Our team members were all unfamiliar with using flask and fetching MapBox API, thus, being able to connect the backend and the frontend was a skill we believed to be useful for future projects. We also learnt content planning and usability priority within the app and how to best serve the user.
+
 <br>
 
 ## What's next for Red Sea
