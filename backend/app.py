@@ -77,6 +77,7 @@ def find_safest_route():
     else:
         return jsonify({'message': 'Failed to get data from Mapbox API', 'status_code': response.status_code})
 
+#get locations to refugee camps
 @app.route('/locations', methods=['GET'])
 def get_locations():
     locations = df_camp.to_dict(orient='records')
