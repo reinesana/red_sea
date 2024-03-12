@@ -6,7 +6,7 @@
 </ul>
 
 ### Demo:
-[![demo video](https://github.com/reinesana/red_sea_app/assets/153279125/ce9d6b0a-bf72-4f0f-b435-c85b400e7401)](https://youtu.be/StTqXEQ2l-Y?t=35s "Everything Is AWESOME")
+[![demo video](https://github.com/reinesana/red_sea_app/assets/153279125/ce9d6b0a-bf72-4f0f-b435-c85b400e7401)](https://youtu.be/LY2TVymYyNM?si=OUKO4GjqYFazqQh8 "Red Sea DEMO")
 
 <br>
 
