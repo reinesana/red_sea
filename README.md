@@ -15,7 +15,7 @@ Over 5000 women in Gaza are facing harsh, unsafe, and unhealthy conditions due t
 
 As we proceeded through cmd-f 2024, our objective was to provide refugee women with: 
 <ol>
-  <li>safe routes: mapped-out paths to refugee camps form any location in Gaza, prioritizing safe passage through conflict zones</li>
+  <li>safe routes: mapped-out paths to refugee camps from any location in Gaza, prioritizing safe passage through conflict zones</li>
   <li>assistance resources: access to humanitarian aid and emergency hotlines on their journey </li>
   <li>medical resources: access to hospitals in Gaza</li>
   <li>safety resources: quick access to safety tips and instructions for their journey.</li>
