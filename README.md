@@ -31,7 +31,10 @@ Red Sea is a web application that uses a dataset of real-time conflicts in Gaza 
 ## Implementation
 Red Sea uses real time data on the coordinates, fatalities and conflict zones in Gaza from ACLED. The application assigns a safety level to each coordinate based on the type of event (riots, air strike, protests. etc) and the number of fatalities. Leveraging a KNN machine learning model, we were able to assign a safety level to surrounding roads on a route using forward geocoding from MAPBOX API, optimizing the safest route for the user. The frontend was built using React and MapBox API for fetching building the map and fetching the routes. Additionally, the machine learning model was built using python and flask.
 
-<br>
+<ol>
+  <li>data from acleddata.com</li>
+</ol>
+ <br>
 
 ## Accomplishments
 Our biggest accomplishment was being able to leverage routes using machine learning. Extracting the coordinate points on the route and assigning safety levels was troubling, however, we were successful in the end. We are also proud of the UI design on the landing page, where we feature a rotating globe as well as language setting options for the user. 
