@@ -23,7 +23,7 @@ df_camp = pd.read_csv(refugee_camps_csv_path)
 app = Flask(__name__)
 
 # Fetching MAPBOX token
-MAPBOX_TOKEN = 'pk.eyJ1IjoiZ3ByZW0wOSIsImEiOiJjbHRmbjhzd3gwcHNpMmxwMWpwdnlja2t6In0.xm3aMSxFMVQkpgJlOFUhVg'
+MAPBOX_TOKEN = 'input your MAPBOX access key here'
 
 @app.route('/mapbox-token', methods=['GET'])
 def get_mapbox_token():
