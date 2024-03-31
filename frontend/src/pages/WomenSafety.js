@@ -1,103 +1,93 @@
-function WomenSafety() {
+import React, { useState } from 'react';
+
+// Define the Card component
+function Card({ id, category, content, likes, onLike }) {
   return (
-    <div className="women-safety">
-      <div className="women-safety-card">
-      <h1>Women's Safety Information</h1>
+    <div className="card">
+      <h3>{category}</h3>
+      <p>{content}</p>
+      <div>
+        <button onClick={() => onLike(id)}>Like ({likes})</button>
+      </div>
+      <div className="filters">
+        {/* Display unique tags for each card */}
+        <button>{category}</button>
+      </div>
+    </div>
+  );
+}
+
+// Sample data for the cards
+let initialCardsData = [
+  { id: 1, category: 'all', content: 'General safety tip.', likes: 0 },
+  { id: 2, category: 'overnight', content: 'Safety tip for staying overnight.', likes: 0 },
+  { id: 3, category: 'children', content: 'Safety tip for children.', likes: 0 },
+  { id: 4, category: 'birthing', content: 'Safety tip for birthing.', likes: 0 },
+  // Add more data as needed
+];
+
+function WomenSafety() {
+  const [cardsData, setCardsData] = useState(initialCardsData);
+  const [newPostContent, setNewPostContent] = useState('');
+
+  // Handler for liking a card
+  const handleLike = (id) => {
+    setCardsData(cardsData.map(card => {
+      if (card.id === id) {
+        return { ...card, likes: card.likes + 1 };
+      }
+      return card;
+    }));
+  };
+
+  // Handler for submitting a new post
+  const handleSubmitPost = () => {
+    if (newPostContent.trim() !== '') {
+      const newPost = {
+        id: cardsData.length + 1,
+        category: 'all', // Set the default category
+        content: newPostContent,
+        likes: 0,
+      };
+      setCardsData([...cardsData, newPost]);
+      setNewPostContent(''); // Clear input field after submission
+    }
+  };
+
+  return (
+    <div className="women-safety-card">
       <div className="sections">
-      <h2>1. General Safety Tips:</h2>
-      <p>
-        Trust your instincts: If something feels off or unsafe, don't hesitate
-        to leave the area or seek help.
-      </p>
-      
+        <h2>Feed</h2>
+        <label>
+          <input className="search" placeholder="search..." />
+        </label>
 
-      <p>
-        Be aware of your surroundings: Stay vigilant and mindful of your
-        environment, especially when traveling alone or with children.
-      </p>
-      <p>
-        Plan your route: Before leaving, familiarize yourself with the route to
-        the shelter and any potential danger zones along the way.
-      </p>
-      <p>
-        Keep emergency contacts handy: Save important phone numbers, including
-        local authorities and trusted contacts, in your phone or written down.
-      </p>
+        {/* Add New Post 
+        <div>
+          <textarea
+            value={newPostContent}
+            onChange={(e) => setNewPostContent(e.target.value)}
+            placeholder="make a post.."
+          />
+          <button onClick={handleSubmitPost}>Post</button>
+        </div> 
+        */}
+        
+        {/* Display Cards */}
+        <div className="cards-container">
+          {cardsData.map(card => (
+            <Card 
+              key={card.id} 
+              id={card.id}
+              content={card.content}
+              likes={card.likes}
+              onLike={handleLike}
+              category={card.category}
+            />
+          ))}
+        </div>
       </div>
-
-      <div className="sections">
-      <h2>2. Packing List:</h2>
-      <p>
-        Identification documents: Carry copies of your identification, passport,
-        or any other relevant documents in case of emergencies.
-      </p>
-
-      <p>
-        Essentials for children: Pack diapers, formula, snacks, and any
-        medications your children may need.
-      </p>
-      <p>
-        Personal hygiene items: Include sanitary products, wipes, hand
-        sanitizer, and toiletries for personal hygiene.
-      </p>
-      <p>
-        Comfort items: Bring items such as blankets, stuffed animals, or
-        favorite toys to provide comfort to your children.
-      </p>
-      <p>
-        First aid kit: Pack a basic first aid kit with bandages, antiseptic
-        wipes, pain relievers, and any necessary medications.
-      </p>
-      <p>
-        Emergency cash: Keep some cash on hand for unexpected expenses or
-        situations where cards may not be accepted.
-      </p>
-      </div>
-
-      <div className='sections'>
-      <h2>3. Safety Tips for Pregnant Women:</h2>
-      <p>
-        Stay hydrated: Drink plenty of water to stay hydrated, especially if
-        you're pregnant and traveling.
-      </p>
-      <p>
-        Take breaks: Pace yourself and take breaks as needed, especially if
-        you're walking long distances.
-      </p>
-      <p>
-        Wear comfortable clothing and footwear: Opt for loose-fitting,
-        comfortable clothing and supportive shoes to reduce discomfort.
-      </p>
-      <p>
-        Communicate any medical needs: Inform shelter staff or volunteers about
-        any medical conditions or special needs related to your pregnancy.
-      </p>
-      </div>
-
-      
-
-
-      <div className="sections">
-      <h2>4. Using the App:</h2>
-      <p>
-        Prioritize safety ratings: When selecting a shelter, prioritize those
-        with high safety ratings and positive user reviews.
-      </p>
-      <p>
-        Share your location: Enable location sharing with trusted contacts
-        through the app for added safety.
-      </p>
-      <p>
-        Utilize emergency features: Familiarize yourself with emergency features
-        within the app, such as SOS alerts or reporting safety concerns.
-      </p>
-      </div>
-      </div>
-
-
-      
-      </div>
-  
+    </div>
   );
 }
 

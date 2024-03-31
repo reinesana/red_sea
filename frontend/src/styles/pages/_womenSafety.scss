@@ -1,17 +1,103 @@
-.women-safety {
-    font-size: 1rem;
-    padding: 1rem 2rem 6rem 2rem;
+.women-safety-card {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .sections {
+    margin-top: 20px;
+  }
+  
+  h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
     
-    .women-safety-card{
-        backdrop-filter: blur(16px) saturate(180%);
-        -webkit-backdrop-filter: blur(16px) saturate(180%);
-        background-color: #d0e3ffd4;
-        border-radius: 12px;
-        border: 1px solid rgba(209, 213, 219, 0.3);
-        padding: 1rem;
-        box-shadow: rgba(106, 106, 106, 0.364) 6px 2px 16px 0px, rgba(106, 106, 106, 0.364) -6px -2px 16px 0px;    }
-    h1 {
-        text-align: center;
-    }
+  }
+  
+  h2 {
+    font-size: 25px;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-top: 50px;
+    margin-left: 25px;
+  }
+  
+  .card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .card h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  
+  .card p {
+    font-size: 16px;
+  }
+  
+  .filters {
+    margin-top: 20px;
+  }
+  
+  .filters button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .filters button:hover {
+    background-color: #0056b3;
+  }
+  
+  textarea {
+    width: 90%;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
 
-}
+
+  .sections .search {
+    width: 90%;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(63, 59, 59, 0);
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+
+  

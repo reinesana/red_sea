@@ -1,3 +1,7 @@
+Description: calculates danger score based on event type and # of fatalities, which is then stored in gaza_danger_levels.csv
+
+
+
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.preprocessing import StandardScaler
 from sklearn.pipeline import make_pipeline
@@ -42,5 +46,3 @@ df['fatality_danger_level'] = df['FATALITIES'].map(fatality_map)
 def calculate_overall_danger_level(row):
     overall_danger_level = 0.6 * row['event_danger_level'] + 0.4 * row['fatality_danger_level']
     return overall_danger_level
-
-
