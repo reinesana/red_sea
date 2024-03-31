@@ -15,45 +15,95 @@
   }
   
   h2 {
-    font-size: 25px;
+    font-size: 27px;
     font-family:Arial, Helvetica, sans-serif;
     margin-top: 50px;
     margin-left: 25px;
-  }
-  
-  .card {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
     margin-bottom: 15px;
   }
   
-  .card h3 {
-    font-size: 20px;
+  .card {
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
     margin-bottom: 5px;
+    background: rgba(161, 62, 62, 0.2);
+    border-radius: 16px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    height: 150px;
+    padding:20px;
+  }
+
+  
+  .card-content {
+    flex: 1;
+    z-index: 0;
+    /* Add padding or margin as needed */
   }
   
+  .card-image img {
+    width: 100px; /* Adjust based on your preference */
+    height: auto;
+    border-radius: 8px; /* Optional: for rounded corners */
+  }
+
+  
+  
+  .card h3 {
+    font-size: 18px;
+    font-family:Inter;
+    padding:0;
+    width: 200px;
+    margin-top:15px;
+    margin-bottom:10px;
+  }
+  
+
   .card p {
-    font-size: 16px;
+    font-size: 13px;
+    font-family:Inter;
+    margin-bottom:0;
+    padding: 0;
+    margin-left:0;
+    margin-right:0;
+    margin-top: 10px;
+    padding:0;
+
+  }
+
+  .card h5 {
+    font-size: 13px;
+    font-family:Inter;
+    margin:0;
+    font-weight: 400;
   }
   
   .filters {
-    margin-top: 20px;
+    margin-left: 20px;
+    margin-top: 15px;
+    font-family:Inter;
   }
-  
+
+
   .filters button {
-    background-color: #007bff;
-    color: #fff;
+    background-color:#fff;
+    color: #000000;
     border: none;
-    border-radius: 5px;
-    padding: 8px 16px;
+    border-radius: 10px;
+    padding: 9px 16px;
     margin-right: 10px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    font-family:Inter;
+    font-weight:500;
   }
   
   .filters button:hover {
-    background-color: #0056b3;
+    background-color: #feb078;
+    color: white;
   }
   
   textarea {
@@ -73,27 +123,24 @@
   }
   
   button {
-    background-color: #28a745;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
     padding: 10px 20px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    background-color: #ffffff00;
+    border-color: #ffffff00;
   }
 
 
   .sections .search {
-    width: 90%;
+    width: 83%;
     padding: 10px;
     background: rgba(255, 255, 255, 0.2);
     border-radius: 16px;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(63, 59, 59, 0);
-    margin-top: 5px;
-    margin-bottom: 5px;
-    margin-left: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
