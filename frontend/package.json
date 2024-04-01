@@ -13,6 +13,7 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.6.7",
     "http-proxy-middleware": "^2.0.6",
+    "i": "^0.3.7",
     "leaflet": "^1.9.4",
     "mapbox-gl": "^3.2.0",
     "polyline": "^0.2.0",
