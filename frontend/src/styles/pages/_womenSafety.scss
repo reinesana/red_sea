@@ -1,5 +1,7 @@
+
+
 .women-safety-card {
-    font-family: Arial, sans-serif;
+    font-family: inter;
     max-width: 800px;
     margin: 0 auto;
   }
@@ -23,82 +25,91 @@
   }
   
   .card {
-    border-radius: 5px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 20px;
-    margin-bottom: 5px;
-    background: rgba(161, 62, 62, 0.2);
+    display: flex;
+    align-items: center; /* This aligns items vertically in the center */
+    justify-content: space-between; /* This places the content on the left and the image on the right */
     border-radius: 16px;
+    margin: 20px 20px 5px 20px; /* Combined margin properties for brevity */
+    background: rgba(255, 255, 255, 0.09);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    height: 150px;
-    padding:20px;
+    height: 150px; /* Fixed height for the card */
+    padding: 20px;
   }
+  
 
   
   .card-content {
     flex: 1;
-    z-index: 0;
     /* Add padding or margin as needed */
   }
   
-  .card-image img {
-    width: 100px; /* Adjust based on your preference */
-    height: auto;
-    border-radius: 8px; /* Optional: for rounded corners */
+  .card-image {
+    /* No need for text-align right here */
+    img {
+      width: 95px; /* Adjust based on your preference */
+      height: 140px;
+      border-radius: 8px; /* For rounded corners */
+      top:5px;
+    }
   }
-
   
   
   .card h3 {
-    font-size: 18px;
+    font-size: 16px;
     font-family:Inter;
     padding:0;
     width: 200px;
-    margin-top:15px;
-    margin-bottom:10px;
+    margin-top:13px;
+    margin-bottom:8px;
   }
   
 
   .card p {
-    font-size: 13px;
+    font-size: 12px;
     font-family:Inter;
     margin-bottom:0;
     padding: 0;
     margin-left:0;
     margin-right:0;
-    margin-top: 10px;
+    margin-top: 5px;
     padding:0;
 
   }
 
   .card h5 {
-    font-size: 13px;
+    font-size: 11px;
+    width: 200px;
     font-family:Inter;
     margin:0;
     font-weight: 400;
+    color:#686868;
   }
-  
+
+  // Styles for filters under the search bar
   .filters {
     margin-left: 20px;
     margin-top: 15px;
     font-family:Inter;
+    
+    
   }
-
+  
 
   .filters button {
     background-color:#fff;
     color: #000000;
     border: none;
     border-radius: 10px;
-    padding: 9px 16px;
+    padding: 8px 15px;
     margin-right: 10px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    font-family:Inter;
-    font-weight:500;
+    font-family: Inter;
+    font-weight: 500;
+    font-size:60%; 
+
   }
   
   .filters button:hover {
@@ -106,6 +117,30 @@
     color: white;
   }
   
+  // styles.scss
+
+.card-filters {
+    button {
+      // General button styles
+      color: #333;
+      border-radius: 20px;
+      padding: 2px 15px;
+      font-size: x-small;
+      margin-right: 8px;
+    }
+  
+    // Category-specific styles
+    .roads { background-color: #a2d3f3bb; }
+    .children { background-color: #ffd3fea1; }
+    .safety { background-color: #d3baff8c; }
+    .night { background-color: #ffd498b1; }
+    margin-left: 0;
+    margin-top: 10px;
+    // Add more categories as needed
+  }
+  
+
+
   textarea {
     width: 90%;
     padding: 10px;
@@ -137,14 +172,17 @@
     border-radius: 16px;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(63, 59, 59, 0);
+    border: 2px solid rgba(157, 156, 156, 0.16);
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
-  
 
-  
+
+    
+  }
+
+
+

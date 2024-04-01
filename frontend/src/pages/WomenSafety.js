@@ -1,17 +1,18 @@
 import React, { useState } from 'react'; // Fix 1: Import useState here
 
-function Card({ id, time, name, category, content, likes, onLike, imageUrl }) {
-
+function Card({ id, time, name, categories, content, imageUrl }) {
+  const displayedContent = content.length > 20 ? content.slice(0, 70) + '...' : content;
 
   return (
     <div className="card">
       <div className="card-content">
         <p>{time}</p>
         <h3>{name}</h3>
-        <h5>{content}</h5>
-
-        <div className="filters">
-          <button>{category}</button>
+        <h5>{displayedContent}</h5>
+        <div className="card-filters">
+          {categories.map((category, index) => (
+            <button key={index} className={category}>{category}</button>
+          ))}
         </div>
       </div>
       <div className="card-image">
@@ -21,84 +22,64 @@ function Card({ id, time, name, category, content, likes, onLike, imageUrl }) {
   );
 }
 
+
+
+
+
+
 // Sample data for the cards with fixed image URLs
+// Sample data for the cards with fixed image URLs and a default image for entries without a specific imageUrl
 let initialCardsData = [
-  { id: 1, time: "Today, 8:15 PM", name: 'Key principles of user experience navigation', category: 'all', content: 'General safety tip.', likes: 0, imageUrl: 'road1.png' },
-  { id: 2, time: "Today, 10:02 AM", name: 'Metrics and strategies for Effective Design', category: 'overnight', content: 'Safety tip for staying overnight.', likes: 0, imageUrl: 'hospital1.png' },
-  { id: 3, time: "Yesterday, 1:39 AM", name: 'Creating Memorable UX to Increase Engagement', category: 'children', content: 'Safety tip for children.', likes: 0, imageUrl: 'sunset1.png' },
-  { id: 4, time: "March 23, 4:30 PM", name: 'sss', category: 'birthing', content: 'Safety tip for birthing.', likes: 0 },
-  // Add more data as needed
+  { id: 1, time: "Today, 8:15 PM", name: 'Key principles of user experience navigation', categories: ['roads', 'safety'], content: 'Safety resources - quick access to safety tips and instructions for their journey.', imageUrl: 'road1.png' },
+  { id: 2, time: "Today, 10:02 AM", name: 'Metrics and strategies for Effective Design', categories: ['children', 'safety'], content: 'Safety resources - quick access to safety tips and instructions for their journey.', imageUrl: 'hospital1.png' },
+  { id: 3, time: "Yesterday, 1:39 AM", name: 'Creating Memorable UX to Increase Engagement', categories: ['safety', 'night'], content: 'Safety resources - quick access to safety tips and instructions for their journey.', imageUrl: 'road1.png' },
+  { id: 4, time: "March 23, 4:30 PM", name: 'Using UX to establish connection and understanding', categories: ['children', 'roads'], content: 'Safety resources - quick access to safety tips and instructions for their journey.', imageUrl: 'hospital1.png' }, // Added a default image URL
 ];
 
+// When rendering category buttons in both Card and
+
+
+
 function WomenSafety() {
-  const [cardsData, setCardsData] = useState(initialCardsData); // Fix 1: useState is now properly imported
-  const [newPostContent, setNewPostContent] = useState('');
+  const [cardsData, setCardsData] = useState(initialCardsData); // Assuming initialCardsData is defined elsewhere
+  const [searchTerm, setSearchTerm] = useState('');
 
-  // Handler for liking a card
-  const handleLike = (id) => {
-    setCardsData(cardsData.map(card => {
-      if (card.id === id) {
-        return { ...card, likes: card.likes + 1 };
-      }
-      return card;
-    }));
-  };
+  // Flatten categories from all cards and then create a set of unique categories
+  const uniqueCategories = [...new Set(cardsData.flatMap(card => card.categories))];
 
-  // Handler for submitting a new post
-  const handleSubmitPost = () => {
-    if (newPostContent.trim() !== '') {
-      const newPost = {
-        id: cardsData.length + 1,
-        category: 'all', // Set the default category
-        content: newPostContent,
-        likes: 0,
-      };
-      setCardsData([...cardsData, newPost]);
-      setNewPostContent(''); // Clear input field after submission
-    }
-  };
-
-  // Get unique categories from cards data
-  const uniqueCategories = [...new Set(cardsData.map(card => card.category))];
+  // Filter cards based on the search term
+  const filteredCards = cardsData.filter(card =>
+    card.name.toLowerCase().includes(searchTerm.toLowerCase())
+  );
 
   return (
     <div className="women-safety-card">
       <div className="sections">
         <h2>Feed</h2>
         <label>
-          <input className="search" placeholder="search..." />
+          <input
+            className="search"
+            placeholder="search..."
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+          />
         </label>
 
-        {/* Render tag buttons */}
         <div className="filters">
-          {uniqueCategories.map(category => (
-            <button key={category}>{category}</button>
+          {uniqueCategories.map((category, index) => (
+            <button key={index}>{category}</button>
           ))}
         </div>
-
-        {/* Add New Post 
-        <div>
-          <textarea
-            value={newPostContent}
-            onChange={(e) => setNewPostContent(e.target.value)}
-            placeholder="make a post.."
-          />
-          <button onClick={handleSubmitPost}>Post</button>
-        </div> 
-        */}
         
-        {/* Display Cards */}
         <div className="cards-container">
-          {cardsData.map(card => (
+          {filteredCards.map(card => (
             <Card 
-              key={card.id} 
-              id={card.id} 
+              key={card.id}
+              id={card.id}
               time={card.time}
-              name={card.name} 
+              name={card.name}
               content={card.content}
-              likes={card.likes}
-              onLike={handleLike}
-              category={card.category}
+              categories={card.categories}
               imageUrl={card.imageUrl}
             />
           ))}
@@ -109,3 +90,4 @@ function WomenSafety() {
 }
 
 export default WomenSafety;
+
