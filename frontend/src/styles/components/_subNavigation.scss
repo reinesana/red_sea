@@ -5,9 +5,13 @@
   position: absolute;
   right: 0.3rem;
   top: 1rem;
+  z-index: 10;
 
   p.greeting {
-    margin: 0.7rem 0 0 0;
+    margin: 0.7rem 0.7rem 0.7rem 0.7rem;
+    color:black;
+    width: 7rem;
+    text-align: center;
   }
 
   button {
@@ -54,6 +58,7 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
+      color:black;
 
       li {
         margin: 0.6rem 0;
@@ -84,13 +89,16 @@
 
       .hospital-toggle {
         margin: 0;
+        margin-top:-0.2rem;
         font-size: 0.8rem;
+
       }
 
       ul {
         padding-left: 0;
         padding-right: 1rem;
         padding-inline-start: 0;
+        color:black;
       }
     }
   }
