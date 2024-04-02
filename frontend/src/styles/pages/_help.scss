@@ -9,7 +9,6 @@
 }
 
 h2 {
-  font-size: 18px;
   font-family:Arial, Helvetica, sans-serif;
   margin-top: 50px;
   margin-left: 25px;
@@ -19,16 +18,16 @@ h2 {
 }
 
 .help-card .search-input {
+  background: rgba(255, 255, 255, 0);
+  border-radius: 16px;
+  border: 2px;
+  border-radius: 20px;
   width: 83%;
   padding: 10px;
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 16px;
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 2px solid rgba(157, 156, 156, 0.16);
   margin-left: 20px;
   margin-right: 20px;
   margin-top: 20px;
+  margin-bottom: 25px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -55,10 +54,10 @@ h2 {
     font-size: 17px;
     font-family:Inter;
     padding:0;
-    width: 250px;
-    margin-top:13px;
-    margin-bottom:0;
+    width: 270px;
+    margin-top:0;
     color:#fff;
+    margin-bottom:0;
   }
 
   p {
@@ -71,7 +70,7 @@ h2 {
   }
 
   a {
-    color: #e47a08; // Keeping link styling consistent
+    color: #4188d5; // Keeping link styling consistent
     text-decoration: none;
 
     &:hover {
@@ -99,8 +98,30 @@ h2 {
     font-size:60%; 
 
     &:hover {
-      background-color: #feb078;
+      background-color: #78abfeab;
       color: white;
     }
   }
+}
+
+
+.icon-circle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 10px; /* Adjust size as needed */
+  height: 10px; /* Adjust size as needed */
+  padding: 7px;
+  border-radius: 50%;
+  margin-top: 50px;
+  margin-bottom:0;
+  background-color: #f0f0f03c; /* Choose your color */
+  color: #f4f4f4; 
+
+}
+
+.icons-row {
+  display: flex;
+  bottom: 10px;
+  gap: 10px; /* Adjust the gap between icons as needed */
 }

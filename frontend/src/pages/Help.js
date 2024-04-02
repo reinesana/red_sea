@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaExternalLinkAlt, FaPhoneAlt } from "react-icons/fa";
+import { FaGlobe, FaPhoneAlt } from "react-icons/fa";
 import { LuContact2 } from "react-icons/lu";
 
 const helpCenters = [
@@ -9,7 +9,7 @@ const helpCenters = [
     website: "https://www.unrwa.org",
     phone: "+970 5 979 20223",
     categories: ["Humanitarian"],
-    imageUrl: "background1.png"
+    imageUrl: "bg1.jpg"
   },
   {
     name: "Palestine Red Crescent Society",
@@ -17,23 +17,23 @@ const helpCenters = [
     website: "http://www.palestinercs.org",
     phone: "+970 8 282 0445",
     categories: ["Humanitarian", "Medical"],
-    imageUrl: "background2.png"
+    imageUrl: "bg4.jpg"
   },
   {
-    name: "UNICEF (United Nations Children's Fund)",
+    name: "UNICEF",
     description: "UNICEF, originally called the United Nations International Children's Emergency Fund in full, now officially United Nations Children's Fund, is an agency of the United Nations responsible for providing humanitarian and developmental aid to children worldwide.",
     website: "https://www.unicef.org",
     phone: "+970 8 288 1800",
     categories: ["Humanitarian"],
-    imageUrl: "https://example.com/unrwa-image.jpg"
+    imageUrl: "bg3.jpg"
   },
   {
-    name: "International Committee of the Red Cross (ICRC)",
+    name: "ICRC",
     description: "Present in Israel and the occupied territories since 1967 and work with the Palestine Red Crescent Society and Magen David Adom in Israel. The ICRC has offices in Tel Aviv, the West Bank and Gaza.",
     website: "https://www.icrc.org",
     phone: "+972 8 282 3056",
     categories: ["Humanitarian", "Medical"],
-    imageUrl: "https://example.com/unrwa-image.jpg"
+    imageUrl: "bg2.jpg"
   },
   {
     name: "Oxfam",
@@ -41,17 +41,11 @@ const helpCenters = [
     website: "https://www.oxfam.org",
     phone: "+44 1865 473727",
     categories: ["Poverty"],
-    imageUrl: "https://example.com/unrwa-image.jpg"
-  },
-  {
-    name: "Doctors Without Borders",
-    description: "Médecins Sans Frontières, also known as Doctors Without Borders, is a charity that provides humanitarian medical care.",
-    website: "https://www.msf.org",
-    phone: "+962 6 462 4775",
-    categories: ["Medical"],
-    imageUrl: "https://example.com/unrwa-image.jpg"
+    imageUrl: "bg5.jpg"
   }
 ];
+
+
 
 function Help() {
   const [searchTerm, setSearchTerm] = useState('');
@@ -92,16 +86,26 @@ function Help() {
         <div className="help-centers-container">
           {filterHelpCenters.map((center, index) => (
             <div 
-            key={index} 
-            className="help-center" 
-            style={{ backgroundImage: `url(${center.imageUrl})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
-          >
-              <p><FaExternalLinkAlt /> <a href={center.website}>Website</a></p>
-              <p>{center.phone ? <><FaPhoneAlt /> {center.phone}</> : <><LuContact2 /> <a href={center.website}>Contact</a></>}</p>
+              key={index} 
+              className="help-center" 
+              style={{ backgroundImage: `url(${center.imageUrl})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+            >
+              <div className="icons-row">
+                <a href={center.website} className="icon-circle" aria-label="Website">
+                  <FaGlobe />
+                </a>
+                {center.phone ? (
+                  <a href={`tel:${center.phone}`} className="icon-circle" aria-label="Phone">
+                    <FaPhoneAlt />
+                  </a>
+                ) : (
+                  <a href={center.website} className="icon-circle" aria-label="Contact">
+                    <LuContact2 />
+                  </a>
+                )}
+              </div>
               <h3>{center.name}</h3>
-              {/* Limiting the description to 100 characters */}
-              <p>{center.description.length > 100 ? center.description.substring(0, 97) + '...' : center.description}</p>
-          
+              <p>{center.description.length > 100 ? `${center.description.substring(0, 97)}...` : center.description}</p>
             </div>
           ))}
         </div>

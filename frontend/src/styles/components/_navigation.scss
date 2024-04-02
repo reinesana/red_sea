@@ -6,35 +6,47 @@
   list-style-type: none;
   font-size: 0.85rem;
   align-items: center;
-  padding: 0.6rem 0;
+  padding: 0.7rem 0;
   margin: 0;
   position: fixed;
   z-index: 1000;
   bottom: 0;
   width: 100%;
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.681);
+  background: rgba(247, 247, 247, 0.65);
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   .map-icon {
-    height: 1.3rem;
-    width: 1.3rem;
-    margin-bottom: 0.3rem;
+    height: 1.1rem;
+    width: 1.1rem;
+    margin-bottom: -0.1rem;
+    
   }
 
   .help-center-icon {
-    height: 1.5rem;
-    width: 1.5rem;
+    height: 1.1rem;
+    width: 1.1rem;
+    margin-bottom: -0.2rem;
   }
 
   .safety-icon {
-    height: 1.7rem;
-    width: 1.7rem;
+    height: 1.4rem;
+    width: 1.4rem;
+    margin-bottom: -0.2rem;
   }
 
   li,
   a {
-    color: #f1330d;
+    color: #d3311cf4;
     text-decoration: none;
     text-align: center;
+    font-size: 12px;
   }
+
 
   .map-li {
     margin: 0 1.3rem;
@@ -43,7 +55,7 @@
   .nav-menu li:active,
   .nav-menu li:focus,
   .nav-menu li:hover {
-    background-color: white;
+    background-color: rgba(242, 194, 149, 0.661);
     color: white;
   }
 }

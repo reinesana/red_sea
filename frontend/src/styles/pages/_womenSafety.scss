@@ -25,7 +25,7 @@ body, html {
   }
   
   h2 {
-    font-size: 27px;
+    font-size: 30px;
     font-family:Arial, Helvetica, sans-serif;
     margin-top: 50px;
     margin-left: 25px;
@@ -73,6 +73,7 @@ body, html {
     width: 190px;
     margin-top:13px;
     margin-bottom:8px;
+    color:#0f0f0f;
   }
   
 
@@ -85,6 +86,7 @@ body, html {
     margin-right:0;
     margin-top: 5px;
     padding:0;
+    color:#747474ca;
 
   }
 
@@ -101,8 +103,7 @@ body, html {
   .filters {
     margin-left: 20px;
     margin-top: 15px;
-    font-family:Inter;
-    
+    font-family:Inter;// Centering for better responsiveness
     
   }
   
@@ -113,7 +114,7 @@ body, html {
     border: none;
     border-radius: 10px;
     padding: 8px 15px;
-    margin-right: 10px;
+    margin-right: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
     font-family: Inter;
@@ -178,19 +179,20 @@ body, html {
   .sections .search {
     width: 83%;
     padding: 10px;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 16px;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 2px solid rgba(157, 156, 156, 0.16);
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 20px;
+    margin-bottom: 25px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-
+    background-color: rgba(255, 255, 255, 0.681);
+    background: rgba(247, 247, 247, 0.65);
+    box-shadow: 0 4px 30px rgba(72, 72, 72, 0.166);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
     
   }
 

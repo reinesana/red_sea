@@ -4,10 +4,12 @@
     margin: 0;
     margin-top: 10px;
     text-align: center;
+    color:black;
   }
   p {
     font-size: 1rem;
     margin-bottom: 20px;
+    color:black;
     text-align: center;
   }
   .landing-btn {
@@ -28,18 +30,24 @@
     color: white;
     border-radius: 15px;
     cursor: pointer;
+
   }
   .welcome {
     position: fixed;
     font-size: 2em;
     width: 20rem;
     top: 55%;
-    left: 50%;
+    left: 53%;
     transform: translate(-50%, -50%);
     margin-top: 25px;
     margin-bottom: 10px;
     p {
       margin: 0;
+      color:black;
+    }
+    h3 {
+      margin-left: 11px;
+
     }
   }
   .landing-select {
@@ -48,16 +56,19 @@
     font-size: 0.75em;
     border-radius: 5px;
     cursor: pointer;
+    
   }
   .language {
-    width: 60%;
     position: fixed;
     top: 73%;
     left: 50%;
     transform: translate(-50%, -50%);
+    color:black;
     p {
       font-size: 0.75em;
-      margin: 0;
+      
+      margin-top: 0;
+      margin-bottom: 5px;
       text-align: center;
     }
   }

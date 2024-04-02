@@ -12,21 +12,21 @@ function Navigation() {
             <NavLink to="/map">
               <FaMapPin className="map-icon" />
               <br></br>
-              Map
+              map
             </NavLink>
           </li>
           <li>
             <NavLink to="/safety-for-women">
               <MdOutlineHealthAndSafety className="safety-icon" />
               <br></br>
-              Women's Safety
+              satefy feed
             </NavLink>
           </li>
           <li className="help-center-li">
             <NavLink to="/help-centers">
               <RiFirstAidKitFill className="help-center-icon" />
               <br></br>
-              Help Centers
+              help centers
             </NavLink>
           </li>
         </ul>
