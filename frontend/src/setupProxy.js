@@ -9,6 +9,8 @@ module.exports = function(app) {
     })
   );
 
+  
+
   app.use(
     '/safest-route',
     createProxyMiddleware({
